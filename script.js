@@ -27,14 +27,14 @@ const weddingConfig = {
 // IMAGE CONFIGURATION — KEEP ALL PHOTOS 16:9
 // ========================================
 const images = {
-  hero: "assets/images/hero.jpg",
-  groom: "assets/images/groom.jpg",
-  bride: "assets/images/bride.jpg",
-  groomParents: "assets/images/groom-parents.jpg",
-  brideParents: "assets/images/bride-parents.jpg",
+  hero: "assets/images/hero.JPG",
+  groom: "assets/images/groom.JPG",
+  bride: "assets/images/bride.JPG",
+  groomParents: "assets/images/groom-parents.JPG",
+  brideParents: "assets/images/bride-parents.JPG",
   gallery: [
-    "assets/images/gallery-1.jpg", "assets/images/gallery-2.jpg", "assets/images/gallery-3.jpg",
-    "assets/images/gallery-4.jpg", "assets/images/gallery-5.jpg", "assets/images/gallery-6.jpg"
+    "assets/images/gallery-1.JPG", "assets/images/gallery-2.JPG", "assets/images/gallery-3.JPG",
+    "assets/images/gallery-4.JPG", "assets/images/gallery-5.JPG", "assets/images/gallery-6.JPG"
   ],
   heroPosition: "center center",
   groomPosition: "center center",
