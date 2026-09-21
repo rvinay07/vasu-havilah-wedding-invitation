@@ -107,15 +107,97 @@ refreshCountdowns(); window.setInterval(refreshCountdowns, 1000);
 // ========================================
 // OPTIONAL VIDEO & USER-CONTROLLED MUSIC
 // ========================================
-const video = document.getElementById("wedding-video"); const videoSection = document.getElementById("video-section");
-if (video) { if (weddingConfig.video) { video.src = weddingConfig.video; video.addEventListener("error", () => { videoSection.hidden = true; }); } else videoSection.hidden = true; }
-const music = document.getElementById("background-music"); const musicButton = document.getElementById("music-control");
+const video = document.getElementById("wedding-video"); const videoSection = document.getElementById("video");
+if (video) { if (weddingConfig.video) { video.src = weddingConfig.video; video.addEventListener("error", () => { if (videoSection) videoSection.hidden = true; }); } else if (videoSection) videoSection.hidden = true; }
+const music = document.getElementById("background-music");
+const musicButton = document.getElementById("music-control");
+
 if (music && musicButton) {
-  if (weddingConfig.music) music.src = weddingConfig.music; else musicButton.hidden = true;
-  music.addEventListener("error", () => { musicButton.hidden = true; });
-  musicButton.addEventListener("click", async () => { try { if (music.paused) await music.play(); else music.pause(); } catch (error) { console.info("Check the music file path."); } });
-  music.addEventListener("play", () => { musicButton.classList.add("is-playing"); musicButton.setAttribute("aria-label", "Pause background music"); });
-  music.addEventListener("pause", () => { musicButton.classList.remove("is-playing"); musicButton.setAttribute("aria-label", "Play background music"); });
+  const OFF_KEY = "weddingMusicOff", TIME_KEY = "weddingMusicTime", TIP_KEY = "weddingMusicTipSeen";
+  const remember = (key, value) => { try { sessionStorage.setItem(key, value); } catch (error) {} };
+  const recall = key => { try { return sessionStorage.getItem(key); } catch (error) { return null; } };
+
+  // ---- the welcome pop-up bubble that points at the music button ----
+  const bubble = document.createElement("div");
+  bubble.className = "music-bubble";
+  bubble.setAttribute("role", "status");
+  bubble.innerHTML = '<button class="music-bubble-body" type="button"><b></b><span></span></button><button class="music-bubble-close" type="button" aria-label="Dismiss this message">&times;</button>';
+  document.body.appendChild(bubble);
+
+  const bubbleTitle = bubble.querySelector("b");
+  const bubbleNote = bubble.querySelector(".music-bubble-body span");
+  let bubbleTimer;
+
+  function showBubble(title, note, seconds) {
+    bubbleTitle.textContent = title;
+    bubbleNote.textContent = note;
+    bubble.classList.add("is-visible");
+    musicButton.classList.add("is-hinting");
+    window.clearTimeout(bubbleTimer);
+    bubbleTimer = window.setTimeout(hideBubble, (seconds || 9) * 1000);
+  }
+  function hideBubble() {
+    window.clearTimeout(bubbleTimer);
+    bubble.classList.remove("is-visible");
+    musicButton.classList.remove("is-hinting");
+  }
+  bubble.querySelector(".music-bubble-close").addEventListener("click", hideBubble);
+  // tapping the bubble itself works exactly like tapping the button
+  bubble.querySelector(".music-bubble-body").addEventListener("click", () => toggleMusic());
+
+  // ---- source, volume and resume position across pages ----
+  if (!weddingConfig.music) musicButton.hidden = true;
+  else {
+    music.preload = "auto";
+    music.volume = 0.65;
+    music.src = weddingConfig.music;
+    const savedTime = Number(recall(TIME_KEY));
+    if (savedTime > 0) music.addEventListener("loadedmetadata", () => { try { music.currentTime = savedTime; } catch (error) {} }, { once: true });
+    music.addEventListener("timeupdate", () => { if (!music.paused) remember(TIME_KEY, String(Math.floor(music.currentTime))); });
+  }
+  music.addEventListener("error", () => { musicButton.hidden = true; hideBubble(); });
+
+  // ---- autoplay, with a fallback for browsers that block it ----
+  const unlockEvents = ["pointerdown", "touchstart", "keydown", "scroll"];
+  function unlock() { unlockEvents.forEach(type => document.removeEventListener(type, unlock)); startMusic(); }
+  function armUnlock() { unlockEvents.forEach(type => document.addEventListener(type, unlock, { once: true, passive: true })); }
+
+  async function startMusic() {
+    if (!weddingConfig.music) return false;
+    try { await music.play(); remember(OFF_KEY, "0"); return true; }
+    catch (error) { armUnlock(); return false; }
+  }
+
+  async function toggleMusic() {
+    hideBubble();
+    if (music.paused) { remember(OFF_KEY, "0"); try { await music.play(); } catch (error) { console.info("Check the music file path."); } }
+    else { music.pause(); remember(OFF_KEY, "1"); }
+  }
+  musicButton.addEventListener("click", toggleMusic);
+
+  // ---- greet the guest when they arrive ----
+  const firstVisit = !recall(TIP_KEY);
+  const wantsMusic = recall(OFF_KEY) !== "1";
+
+  async function greet() {
+    if (musicButton.hidden || !weddingConfig.music) return;
+    const playing = wantsMusic ? await startMusic() : false;
+    if (!firstVisit) return;
+    remember(TIP_KEY, "1");
+    if (playing) showBubble("Music is playing \u266a", "Tap here to turn it off.", 9);
+    else showBubble("Play our music \u266a", "Tap here to turn it on.", 12);
+  }
+  window.setTimeout(greet, 1200);
+
+  music.addEventListener("play", () => {
+    musicButton.classList.add("is-playing");
+    musicButton.setAttribute("aria-label", "Turn off background music");
+    if (bubble.classList.contains("is-visible")) showBubble("Music is playing \u266a", "Tap here to turn it off.", 7);
+  });
+  music.addEventListener("pause", () => {
+    musicButton.classList.remove("is-playing");
+    musicButton.setAttribute("aria-label", "Play background music");
+  });
 }
 
 // ========================================
