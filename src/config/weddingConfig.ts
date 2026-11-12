@@ -56,13 +56,13 @@ export const weddingConfig = {
       id: "reception",
       title: "Wedding Reception",
       eyebrow: "An Evening of Joy",
-      date: "2027-02-28T19:00:00",
-      displayDate: "28 February 2027",
+      date: "2027-02-04T19:00:00",
+      displayDate: "4 February 2027",
       displayTime: "7:00 PM",
       venue: "Sri Thimmaih Kalyana Mandapam",
       address: "Bollavaram Rural, Proddatur",
       mapsUrl: "https://maps.app.goo.gl/g9VhPVfzPj7Lbq7h9",
-      calendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception+of+VASU+%26+MERCY+HAVILAH&dates=20270228T133000Z/20270228T170000Z&details=Wedding+reception+celebration+of+Vasu+and+Mercy+Havilah.&location=Sri+Thimmaih+Kalyana+Mandapam,+Bollavaram+Rural,+Proddatur",
+      calendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception+of+VASU+%26+MERCY+HAVILAH&dates=20270204T133000Z/20270204T170000Z&details=Wedding+reception+celebration+of+Vasu+and+Mercy+Havilah.&location=Sri+Thimmaih+Kalyana+Mandapam,+Bollavaram+Rural,+Proddatur",
       schedule: [
         { time: "07:00 PM", text: "Welcoming of Guests & Musical Prelude" },
         { time: "07:30 PM", text: "Grand Entrance of Vasu & Mercy Havilah" },
@@ -100,7 +100,7 @@ export const weddingConfig = {
     {
       id: "reception",
       status: "upcoming",
-      badge: "Upcoming · 28 Feb 2027",
+      badge: "Upcoming · 4 Feb 2027",
       title: "Wedding Reception",
       scripture: "“A cord of three strands is not quickly broken.” — Ecclesiastes 4:12",
       description: "An evening of praise, delightful fellowship, and joyful celebration with family and friends at Sri Thimmaih Kalyana Mandapam, Bollavaram Rural, Proddatur at 7:00 PM."

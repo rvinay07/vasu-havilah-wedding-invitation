@@ -13,7 +13,7 @@ export const BlessingsPage: React.FC = () => {
       ``,
       `With praise to God, we joyfully invite you to celebrate our Holy Matrimony on 3 February 2027 at ${weddingConfig.events.ceremony.venue}, ${weddingConfig.events.ceremony.address}.`,
       ``,
-      `Reception: 28 February 2027 at ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}.`,
+      `Reception: 4 February 2027 at ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}.`,
       ``,
       `View digital invitation, timings & maps:`,
       window.location.origin ? window.location.href : "https://rvinay07.github.io/vasu-havilah-wedding-invitation/"

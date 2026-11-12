@@ -44,7 +44,7 @@ test('Centralized Wedding Configuration Integrity', async (t) => {
   });
 
   await t.test('Reception date, timing and venue are correct', () => {
-    assert.match(content, /2027-02-28T19:00:00/, 'Reception date must be 28 Feb 2027 7:00 PM');
+    assert.match(content, /2027-02-04T19:00:00/, 'Reception date must be 4 Feb 2027 7:00 PM');
     assert.match(content, /Sri Thimmaih Kalyana Mandapam/, 'Venue must be Sri Thimmaih Kalyana Mandapam');
     assert.match(content, /Bollavaram Rural,\s*Proddatur/, 'Address must be Bollavaram Rural, Proddatur');
     assert.match(content, /https:\/\/maps\.app\.goo\.gl\/g9VhPVfzPj7Lbq7h9/, 'Must contain valid Google Maps URL for reception');
