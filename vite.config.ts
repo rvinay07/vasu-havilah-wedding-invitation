@@ -51,6 +51,27 @@ export default defineConfig({
           fs.cpSync(srcAssets, distAssets, { recursive: true });
         }
 
+        // Ensure both lowercase .jpg and uppercase .JPG exist on case-sensitive Linux (Vercel)
+        const distImages = path.join(distAssets, 'images');
+        if (fs.existsSync(distImages)) {
+          const imgFiles = fs.readdirSync(distImages);
+          for (const img of imgFiles) {
+            const lowerName = img.toLowerCase();
+            if (lowerName.endsWith('.jpg') || lowerName.endsWith('.jpeg')) {
+              const baseName = img.replace(/\.jpe?g$/i, '');
+              const lowerFile = path.join(distImages, `${baseName}.jpg`);
+              const upperFile = path.join(distImages, `${baseName}.JPG`);
+              const currentFile = path.join(distImages, img);
+              if (!fs.existsSync(lowerFile)) {
+                try { fs.copyFileSync(currentFile, lowerFile); } catch {}
+              }
+              if (!fs.existsSync(upperFile)) {
+                try { fs.copyFileSync(currentFile, upperFile); } catch {}
+              }
+            }
+          }
+        }
+
         // Copy compiled bundle assets directly into root assets/
         if (fs.existsSync(distAssets)) {
           const files = fs.readdirSync(distAssets);
