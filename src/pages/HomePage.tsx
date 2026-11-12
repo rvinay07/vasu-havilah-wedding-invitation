@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { Calendar, ArrowRight, Heart, MapPin, Image as ImageIcon, BookOpen, Share2 } from 'lucide-react';
-import { weddingConfig } from '../config/weddingConfig';
+import { weddingConfig, getWeddingShareMessage } from '../config/weddingConfig';
 import { AmbientCanvas } from '../components/AmbientCanvas';
 import { Countdown } from '../components/Countdown';
 
@@ -28,19 +28,7 @@ export const HomePage: React.FC = () => {
   }, []);
 
   const handleWhatsAppShare = () => {
-    const shareMessage = [
-      `✝ Wedding Invitation: ${weddingConfig.groomName} & ${weddingConfig.brideName}`,
-      ``,
-      `"Therefore what God has joined together, let no one separate." — Matthew 19:6`,
-      ``,
-      `With praise to God, we joyfully invite you to celebrate our Holy Matrimony on 3 February 2027 at ${weddingConfig.events.ceremony.venue}, ${weddingConfig.events.ceremony.address}.`,
-      ``,
-      `Reception: 4 February 2027 at ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}.`,
-      ``,
-      `View digital invitation, timings & maps:`,
-      weddingConfig.hostingUrl
-    ].join('\n');
-
+    const shareMessage = getWeddingShareMessage();
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
     window.open(whatsappUrl, '_blank', 'noopener');
   };

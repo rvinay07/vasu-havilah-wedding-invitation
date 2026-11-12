@@ -152,3 +152,40 @@ export const weddingConfig = {
   ] as BibleVerse[]
 };
 
+export function getWeddingShareMessage(): string {
+  return [
+    `✝ WEDDING INVITATION ✝`,
+    `VASU & MERCY HAVILAH`,
+    ``,
+    `"Therefore what God has joined together, let no one separate." — Matthew 19:6`,
+    ``,
+    `With praise and gratitude to God, we joyfully invite you and your family to celebrate our Holy Matrimony:`,
+    ``,
+    `🤵 Groom: ${weddingConfig.groomName}`,
+    `Son of Mr. ${weddingConfig.groomFather} & Mrs. ${weddingConfig.groomMother}`,
+    ``,
+    `👰 Bride: ${weddingConfig.brideName}`,
+    `Daughter of Mr. ${weddingConfig.brideFather} & Mrs. ${weddingConfig.brideMother}`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `💍 HOLY MATRIMONY SERVICE:`,
+    `📅 Wednesday, 3 February 2027 at 9:00 AM`,
+    `📍 ${weddingConfig.events.ceremony.venue}, ${weddingConfig.events.ceremony.address}`,
+    `🗺️ Directions: ${weddingConfig.events.ceremony.mapsUrl}`,
+    ``,
+    `🎉 WEDDING RECEPTION:`,
+    `📅 Thursday, 4 February 2027 at 7:00 PM`,
+    `📍 ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}`,
+    `🗺️ Directions: ${weddingConfig.events.reception.mapsUrl}`,
+    ``,
+    `📞 Contacts:`,
+    `• Vasu (Groom): +91 9652296062`,
+    `• Hoshi (Family): +91 6281047922`,
+    `• General Info: +91 8978148996`,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    ``,
+    `🌐 View digital invitation, photos, timings & maps:`,
+    weddingConfig.hostingUrl
+  ].join('\n');
+}
+
