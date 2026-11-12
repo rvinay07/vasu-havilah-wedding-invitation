@@ -67,5 +67,12 @@ The application will be served at `http://localhost:8080/`.
 
 ---
 
+## 🌐 Live Deployment
+- **Production Branch:** `main`
+- **GitHub Repository:** [https://github.com/rvinay07/vasu-havilah-wedding-invitation](https://github.com/rvinay07/vasu-havilah-wedding-invitation)
+- **GitHub Pages:** [https://rvinay07.github.io/vasu-havilah-wedding-invitation/](https://rvinay07.github.io/vasu-havilah-wedding-invitation/)
+
+---
+
 ## 👤 Designer Credit
 Designed By ~Vinay · Made with Love
