@@ -4,6 +4,7 @@ import path from 'path';
 import fs from 'fs';
 
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     {
@@ -35,6 +36,12 @@ export default defineConfig({
         const srcAssets = path.join(__dirname, 'assets');
         if (fs.existsSync('dist') && fs.existsSync(srcAssets)) {
           fs.cpSync(srcAssets, distAssets, { recursive: true });
+        }
+        // Create 404.html in dist for GitHub Pages SPA routing fallback
+        const distIndex = path.join(__dirname, 'dist/index.html');
+        const dist404 = path.join(__dirname, 'dist/404.html');
+        if (fs.existsSync(distIndex)) {
+          fs.copyFileSync(distIndex, dist404);
         }
       }
     }

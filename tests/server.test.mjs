@@ -76,9 +76,9 @@ test('HTTP Server & Static Asset Delivery', async (t) => {
 
   await t.test('Compiled CSS stylesheet is served with text/css Content-Type', async () => {
     const indexRes = await simulateRequest('GET', '/');
-    const cssMatch = indexRes.body.match(/href="(\/assets\/[^"]+\.css)"/);
+    const cssMatch = indexRes.body.match(/href="(?:\.\/)?(assets\/[^"]+\.css)"/);
     assert.ok(cssMatch, 'Should find CSS bundle link in index.html');
-    const cssUrl = cssMatch[1];
+    const cssUrl = '/' + cssMatch[1];
 
     const res = await simulateRequest('GET', cssUrl);
     assert.equal(res.statusCode, 200);
@@ -88,9 +88,9 @@ test('HTTP Server & Static Asset Delivery', async (t) => {
 
   await t.test('Compiled JS module is served with application/javascript Content-Type', async () => {
     const indexRes = await simulateRequest('GET', '/');
-    const jsMatch = indexRes.body.match(/src="(\/assets\/[^"]+\.js)"/);
+    const jsMatch = indexRes.body.match(/src="(?:\.\/)?(assets\/[^"]+\.js)"/);
     assert.ok(jsMatch, 'Should find JS bundle script in index.html');
-    const jsUrl = jsMatch[1];
+    const jsUrl = '/' + jsMatch[1];
 
     const res = await simulateRequest('GET', jsUrl);
     assert.equal(res.statusCode, 200);
