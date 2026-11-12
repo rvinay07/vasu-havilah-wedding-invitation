@@ -158,6 +158,7 @@ export const Header: React.FC = () => {
               type="button"
               className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center bg-cream-warm/90 dark:bg-midnight-card/90 backdrop-blur-md border border-rose/30 dark:border-midnight-border text-plum dark:text-darktext-primary shadow-xs hover:border-rose dark:hover:border-champagne hover:scale-105 active:scale-95 transition-all touch-manipulation focus:outline-none focus-visible:ring-2 focus-visible:ring-rose dark:focus-visible:ring-champagne"
               aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+              data-testid="theme-toggle"
               title="Toggle theme"
             >
               {theme === 'dark' ? (

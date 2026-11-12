@@ -28,7 +28,7 @@ export const GalleryPage: React.FC = () => {
   }));
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <PageHero
         bgImage={weddingConfig.gallery[0].src}
         eyebrow="Cherished Memories"

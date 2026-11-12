@@ -9,7 +9,7 @@ export const WeddingDetailsPage: React.FC = () => {
   const { ceremony, reception } = weddingConfig.events;
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <PageHero
         bgImage={weddingConfig.media.hero}
         eyebrow="Save the Dates"

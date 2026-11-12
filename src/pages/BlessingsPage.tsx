@@ -24,7 +24,7 @@ export const BlessingsPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <PageHero
         bgImage={weddingConfig.media.hero}
         eyebrow="In God's Holy Word"

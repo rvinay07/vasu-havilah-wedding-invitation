@@ -7,7 +7,7 @@ import { PageHero } from '../components/PageHero';
 
 export const OurStoryPage: React.FC = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <PageHero
         bgImage={weddingConfig.media.hero}
         eyebrow="Guided by Faith"
@@ -178,7 +178,7 @@ export const OurStoryPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative border-l-2 border-rose/30 dark:border-midnight-border ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-10">
+        <div className="relative border-l-2 border-rose/30 dark:border-midnight-border ml-7 sm:ml-10 pl-6 sm:pl-10 space-y-10">
           {weddingConfig.milestones.map((milestone, idx) => {
             const isCompleted = milestone.status === 'completed';
             return (
@@ -244,9 +244,10 @@ export const OurStoryPage: React.FC = () => {
         <div className="text-center mt-16">
           <Link
             to="/wedding-details"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-md bg-rose dark:bg-champagne hover:bg-rose-dark dark:hover:bg-champagne-hover text-white dark:text-midnight font-sans text-xs uppercase tracking-widest font-bold shadow-rose-glow dark:shadow-champagne-glow transition-all"
+            className="inline-flex items-center justify-center gap-2 max-w-full px-5 sm:px-8 py-3.5 rounded-md bg-rose dark:bg-champagne hover:bg-rose-dark dark:hover:bg-champagne-hover text-white dark:text-midnight font-sans text-xs uppercase tracking-wider sm:tracking-widest font-bold shadow-rose-glow dark:shadow-champagne-glow transition-all text-center"
           >
-            View Wedding Ceremony &amp; Venues <ArrowRight className="w-4 h-4" />
+            <span>View Wedding Ceremony &amp; Venues</span>
+            <ArrowRight className="w-4 h-4 shrink-0" />
           </Link>
         </div>
       </section>
