@@ -40,7 +40,7 @@ export const GalleryPage: React.FC = () => {
       <section className="py-16 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-[0.7rem] uppercase tracking-[0.25em] text-olive dark:text-darksage font-bold mb-2">
-            Interactive Showcase
+            Cherished Moments
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-medium">
             Pre-Wedding Highlights

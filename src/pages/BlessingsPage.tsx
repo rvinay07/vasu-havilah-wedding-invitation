@@ -16,7 +16,7 @@ export const BlessingsPage: React.FC = () => {
       `Reception: 28 February 2027 at ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}.`,
       ``,
       `View digital invitation, timings & maps:`,
-      window.location.origin ? window.location.href : "https://vasu-mercy-wedding.com"
+      window.location.origin ? window.location.href : "https://rvinay07.github.io/vasu-havilah-wedding-invitation/"
     ].join('\n');
 
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;

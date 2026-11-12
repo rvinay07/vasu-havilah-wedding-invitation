@@ -38,7 +38,7 @@ export const HomePage: React.FC = () => {
       `Reception: 28 February 2027 at ${weddingConfig.events.reception.venue}, ${weddingConfig.events.reception.address}.`,
       ``,
       `View digital invitation, timings & maps:`,
-      window.location.origin ? window.location.href : "https://vasu-mercy-wedding.com"
+      window.location.origin ? window.location.href : "https://rvinay07.github.io/vasu-havilah-wedding-invitation/"
     ].join('\n');
 
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
@@ -225,14 +225,14 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* ================= 4. EXPLORATION GATEWAY CARDS ================= */}
+      {/* ================= 4. CELEBRATION HIGHLIGHTS ================= */}
       <section className="py-20 px-4 max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[0.7rem] uppercase tracking-[0.25em] text-olive dark:text-darksage font-bold mb-2">
-            Explore the Invitation
+            Celebration Highlights
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-plum dark:text-darktext-primary">
-            Wedding Invitation Pages
+            Wedding Itinerary &amp; Story
           </h2>
           <p className="font-sans text-sm text-plum-muted dark:text-darktext-secondary max-w-md mx-auto mt-2">
             Discover our testimony of faith, upcoming ceremony details, gallery, and scriptures.
@@ -271,7 +271,7 @@ export const HomePage: React.FC = () => {
                   </p>
 
                   <div className="flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-rose dark:text-champagne group-hover:translate-x-1 transition-transform">
-                    <span>Explore Page</span>
+                    <span>View Details</span>
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>
