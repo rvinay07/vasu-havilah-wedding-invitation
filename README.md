@@ -74,5 +74,5 @@ The application will be served at `http://localhost:8080/`.
 
 ---
 
-## 👤 Designer Credit
-Designed By ~Vinay · Made with Love
+## 👤 Developer
+Developed by Vinay · WhatsApp: [+91 9866450060](https://wa.me/919866450060)

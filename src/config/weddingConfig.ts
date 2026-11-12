@@ -14,7 +14,13 @@ export const weddingConfig = {
     { label: "HOSHI (Family)", number: "+91 6281047922", tel: "+916281047922" }
   ],
 
-  designerCredit: "Designed By ~Vinay · Made with Love",
+  developer: {
+    name: "Vinay",
+    phone: "9866450060",
+    displayPhone: "+91 9866450060",
+    whatsappUrl: "https://wa.me/919866450060?text=Hi%20Vinay%2C%20loved%20the%20wedding%20invitation%20website!"
+  },
+  designerCredit: "Developed by Vinay · +91 9866450060",
   
   coreVerse: {
     quote: "Therefore what God has joined together, let no one separate.",
