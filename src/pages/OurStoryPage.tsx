@@ -111,9 +111,6 @@ export const OurStoryPage: React.FC = () => {
               Their Families
             </h2>
             <div className="w-16 h-[1px] bg-rose/40 dark:bg-champagne/40 mx-auto my-3" />
-            <p className="font-sans text-sm text-plum-muted dark:text-darktext-secondary max-w-md mx-auto">
-              Rooted in prayer and thankful for the heritage of Christian devotion passed down through generations.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
