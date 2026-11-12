@@ -14,6 +14,8 @@ export const weddingConfig = {
     { label: "HOSHI (Family)", number: "+91 6281047922", tel: "+916281047922" }
   ],
 
+  hostingUrl: "https://vasuwedshavilah.vercel.app/",
+
   developer: {
     name: "Vinay",
     phone: "9866450060",

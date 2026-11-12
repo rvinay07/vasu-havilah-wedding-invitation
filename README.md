@@ -68,7 +68,7 @@ The application will be served at `http://localhost:8080/`.
 ---
 
 ## 🌐 Live Deployment
-- **Production Branch:** `main`
+- **Production URL (Vercel):** [https://vasuwedshavilah.vercel.app/](https://vasuwedshavilah.vercel.app/)
 - **GitHub Repository:** [https://github.com/rvinay07/vasu-havilah-wedding-invitation](https://github.com/rvinay07/vasu-havilah-wedding-invitation)
 - **GitHub Pages:** [https://rvinay07.github.io/vasu-havilah-wedding-invitation/](https://rvinay07.github.io/vasu-havilah-wedding-invitation/)
 
