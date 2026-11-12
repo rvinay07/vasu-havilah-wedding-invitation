@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-rose: #C98271;
+    --color-olive: #67724A;
+    --color-pear: #C2CCA8;
+    --color-cream: #FFEDDC;
+    --color-plum: #4F3730;
+
+    --bg-page: #FAF5EE;
+    --bg-card: #FFFFFF;
+    --bg-alt: #F3ECE1;
+    --bg-soft: #FFEDDC;
+
+    --text-main: #4F3730;
+    --text-muted: #70554D;
+    --text-soft: #8E736B;
+
+    --border-rose: rgba(201, 130, 113, 0.35);
+    --border-subtle: rgba(79, 55, 48, 0.12);
+    --nav-glass: rgba(250, 245, 238, 0.94);
+  }
+
+  [data-theme="dark"] {
+    /* ── Midnight Champagne Luxury Tokens ── */
+    --bg-page: #101820;          /* Main background */
+    --bg-alt: #151F28;           /* Secondary background */
+    --bg-card: #1B2732;          /* Card background */
+    --bg-elevated: #24313B;      /* Elevated surfaces */
+    --bg-soft: #151F28;
+
+    --text-main: #F1EBDD;        /* Primary text */
+    --text-secondary: #C1C5C4;   /* Secondary text */
+    --text-muted: #A0AAA9;       /* Muted text */
+    --text-soft: #A0AAA9;
+
+    --champagne: #D6B878;        /* Champagne gold */
+    --champagne-hover: #E6CC91;  /* Gold hover */
+    --sage-accent: #A6B3A1;      /* Sage accent */
+    --border: #34424C;           /* Border */
+
+    --border-rose: #34424C;
+    --border-subtle: #34424C;
+    --nav-glass: rgba(16, 24, 32, 0.96);
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+  }
+}
+
+/* Ken Burns effect for Hero */
+@keyframes kenBurns {
+  0% { transform: scale(1.02); }
+  50% { transform: scale(1.08) translate(-1%, -1%); }
+  100% { transform: scale(1.02); }
+}
+
+.animate-kenburns {
+  animation: kenBurns 24s ease-in-out infinite alternate;
+}
+
+/* Equalizer Bars for Audio */
+@keyframes eqBar1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+@keyframes eqBar2 {
+  0%, 100% { height: 16px; }
+  50% { height: 6px; }
+}
+@keyframes eqBar3 {
+  0%, 100% { height: 8px; }
+  50% { height: 18px; }
+}
+
+.eq-bar-1 { animation: eqBar1 0.8s ease-in-out infinite; }
+.eq-bar-2 { animation: eqBar2 0.7s ease-in-out infinite 0.15s; }
+.eq-bar-3 { animation: eqBar3 0.9s ease-in-out infinite 0.3s; }
+
+/* Lightbox custom overrides */
+.yarl__portal {
+  --yarl__color_backdrop: rgba(16, 24, 32, 0.98) !important;
+}

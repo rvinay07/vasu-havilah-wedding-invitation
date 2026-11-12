@@ -1,18 +1,71 @@
-# Christian Wedding Invitation
+# Christian Wedding Invitation — Vasu & Mercy Havilah
+## Premium React + Vite + TypeScript Multi-Page Wedding Website
 
-A static, GitHub Pages-ready multi-page wedding invitation.
+A digital Christian wedding invitation celebrating the Holy Matrimony of **Vasu & Mercy Havilah**.
 
-## Pages
+---
 
-- `index.html` — invitation, bride and groom, parents, blessing, and Scripture
-- `events.html` — ceremony and reception details, independent live countdowns, venue maps, schedule, and optional video
-- `gallery.html` — pre-wedding and family gallery
+## 🎨 Color Palette (From Reference)
 
-## Edit before publishing
+- **Dusty Rose** (`#C98271`): Primary CTAs, active indicators, heart flourishes (`♥`), monogram glows.
+- **Olive Green** (`#67724A`): Botanical cross accents (`✝`), eyebrows, secondary calendar buttons.
+- **Soft Pear Green** (`#C2CCA8`): Completed milestone tags, delicate card borders, soft badge pills.
+- **Cream White** (`#FFEDDC`): Warm stationery parchment washes, card surfaces, countdown backdrops.
+- **Plum Brown** (`#4F3730`): High-contrast letterpress typography, hero gradients, and site footer.
 
-1. Open `script.js` and replace all upper-case placeholders in `weddingConfig`.
-2. Add the three footer contact numbers, Maps links, dates, and venue details there.
-3. Add files to `assets/` using the filenames listed in `assets/README.md`.
-4. Commit the complete folder to GitHub and enable GitHub Pages from the repository root.
+---
 
-No server or API is required. All internal links and assets use relative paths, so the website works at a repository URL such as `https://username.github.io/repository-name/`.
+## 🛠️ Technology Stack & Libraries
+
+- **React 18 + Vite 5 + TypeScript**: Fast modern frontend tooling with complete type safety.
+- **Tailwind CSS**: Responsive utility styling with custom color tokens and dark mode support.
+- **React Router v6**: Seamless multi-page client-side routing (`/`, `/our-story`, `/wedding-details`, `/gallery`, `/blessings`).
+- **Motion for React (Framer Motion)**: Smooth page and component transitions.
+- **GSAP (GreenSock)**: Advanced cinematic staggered text reveal on hero names.
+- **Lucide React**: Clean icons.
+- **Swiper.js**: Touch-friendly pre-wedding photo carousel with autoplay.
+- **Yet Another React Lightbox**: Fullscreen gallery with touch swipe, zoom, and counter.
+
+---
+
+## 📂 Multi-Page Architecture
+
+1. **Home (`/`)**: Cinematic hero, formal sacred invitation card, live countdown preview, 4 gateway exploration cards, WhatsApp share banner.
+2. **Our Story (`/our-story`)**: Couple portraits, family cards, faith journey timeline with **Engagement as an already completed milestone** (Song of Solomon 3:4).
+3. **Wedding Details (`/wedding-details`)**:
+   - **Wedding Ceremony:** 3 February 2027, 9:00 AM at Mahendra Kalyana Mandapam, Tilak Nagar, Guntakal. Live countdown, Google Maps directions, Add to Calendar, and Order of Service.
+   - **Wedding Reception:** 28 February 2027, 7:00 PM at Sri Thimmaih Kalyana Mandapam, Bollavaram Rural, Proddatur. Live countdown, Google Maps directions, Add to Calendar, and Program.
+   - Pre-wedding film video player (`wedding.mp4`).
+   - *Strictly NO RSVP. Strictly NO Thanksgiving service.*
+4. **Gallery (`/gallery`)**: 6 photographs, Swiper showcase, responsive editorial grid, fullscreen touch swipe lightbox.
+5. **Blessings (`/blessings`)**: Matthew 19:6, selected scriptures (1 Cor 13, Eccl 4, Col 3, Psalm 127, 1 John 4, Numbers 6), prayer for the couple, and WhatsApp sharing.
+
+---
+
+## 🚀 Development & Build
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run development server (Vite HMR)
+```bash
+npm run dev
+```
+
+### Build for production
+```bash
+npm run build
+```
+
+### Run production server (with HTTP 206 streaming for video & audio)
+```bash
+node server.js
+```
+The application will be served at `http://localhost:8080/`.
+
+---
+
+## 👤 Designer Credit
+Designed By ~Vinay · Made with Love

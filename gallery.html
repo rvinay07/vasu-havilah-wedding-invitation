@@ -1,39 +1,203 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pre-wedding and family photo gallery."><meta name="theme-color" content="#405445">
-  <title>Gallery | Wedding Invitation</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pre-wedding and cherished photo gallery for Vasu &amp; Mercy Havilah.">
+  <meta name="theme-color" content="#4F3730">
+  
+  <meta property="og:title" content="Photo Gallery | Vasu &amp; Mercy Havilah Wedding">
+  <meta property="og:description" content="Cherished pre-wedding moments and joy of Vasu &amp; Mercy Havilah.">
+  <meta property="og:image" content="assets/images/gallery-1.jpg">
+  <meta property="og:type" content="website">
+
+  <title>Photo Gallery | Vasu &amp; Mercy Havilah Wedding</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header" id="top"><nav class="nav page-width" aria-label="Main navigation"><a class="nav-mark" href="index.html" aria-label="Wedding invitation home">✝</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><div class="nav-links" id="site-nav"><a href="index.html">Home</a><a href="index.html#couple">The Couple</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a></div></nav></header>
-  <main>
-    <!-- ================= GALLERY HERO ================= -->
-    <section class="page-hero" style="background:linear-gradient(rgba(40,56,44,.25),rgba(40,56,44,.45)),url('assets/images/gallery-1.jpg') center/cover no-repeat"><div class="page-hero-content"><p class="eyebrow">Moments to cherish</p><h1>Our gallery</h1><p>A small collection of pre-wedding and family moments, held close with love.</p></div></section>
+  <!-- ================= PAGE LOADING EXPERIENCE ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-monogram">V <span class="preloader-cross">✝</span> M</div>
+      <div class="preloader-line"></div>
+      <p class="preloader-subtitle">VASU &amp; MERCY HAVILAH</p>
+    </div>
+  </div>
 
-    <!-- ================= PHOTO GALLERY ================= -->
-    <section class="section gallery" aria-labelledby="gallery-title"><div class="page-width"><header class="section-header" data-reveal><p class="eyebrow">Together in every moment</p><h2 class="section-title" id="gallery-title">Memories in bloom</h2></header><div class="gallery-grid">
-      <figure class="gallery-item gallery-item--feature" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-1.jpg" alt="Pre-wedding photograph" loading="lazy"><div class="image-fallback">Pre-wedding moment</div></div><figcaption>A promise, beautifully begun</figcaption></figure>
-      <figure class="gallery-item" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-2.jpg" alt="Wedding family photograph" loading="lazy"><div class="image-fallback">Family moment</div></div><figcaption>Celebrated by family</figcaption></figure>
-      <figure class="gallery-item" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-3.jpg" alt="Pre-wedding photograph" loading="lazy"><div class="image-fallback">Pre-wedding moment</div></div><figcaption>In every little glance</figcaption></figure>
-      <figure class="gallery-item" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-4.jpg" alt="Wedding family photograph" loading="lazy"><div class="image-fallback">Family moment</div></div><figcaption>Love that surrounds us</figcaption></figure>
-      <figure class="gallery-item" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-5.jpg" alt="Pre-wedding photograph" loading="lazy"><div class="image-fallback">Pre-wedding moment</div></div><figcaption>Grace in the journey</figcaption></figure>
-      <figure class="gallery-item" data-reveal><div class="media-frame"><img data-gallery-image src="assets/images/gallery-6.jpg" alt="Wedding family photograph" loading="lazy"><div class="image-fallback">Family moment</div></div><figcaption>Joy, now and always</figcaption></figure>
-    </div></div></section>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header" id="top">
+    <nav class="nav page-width" aria-label="Main navigation">
+      <div class="nav-brand-wrap">
+        <a class="nav-mark" href="index.html" aria-label="Wedding invitation home">✝</a>
+      </div>
+
+      <div class="nav-links" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="wedding-details.html">Wedding Details</a>
+        <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+        <a href="blessings.html">Blessings</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" style="background:var(--hero-overlay),url('assets/images/gallery-1.jpg') center/cover no-repeat">
+      <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+      <div class="page-hero-content">
+        <p class="eyebrow" style="color:var(--rose);">Cherished memories</p>
+        <h1>Moments of Joy &amp; Grace</h1>
+        <p>A visual journey of faith, laughter, and prayer leading up to our holy covenant.</p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY GRID ================= -->
+    <section class="section gallery" aria-labelledby="gallery-title">
+      <div class="page-width">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Our photographic journal</p>
+          <h2 class="section-title" id="gallery-title">Pre-wedding portraits</h2>
+          <p class="section-copy">Tap any photo to view in fullscreen with touch swipe navigation.</p>
+        </header>
+
+        <div class="gallery-grid" data-reveal-stagger>
+          <!-- Photo 1: Hero Walk -->
+          <figure class="gallery-item gallery-item--feature" data-index="0">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-1.jpg" alt="Vasu and Mercy Havilah portrait 1" loading="lazy">
+            </div>
+            <figcaption>A walk of grace and peace</figcaption>
+          </figure>
+
+          <!-- Photo 2: Holding Hands -->
+          <figure class="gallery-item" data-index="1">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-2.jpg" alt="Vasu and Mercy Havilah portrait 2" loading="lazy">
+            </div>
+            <figcaption>Walking together in faith</figcaption>
+          </figure>
+
+          <!-- Photo 3: Gentle Laughter -->
+          <figure class="gallery-item" data-index="2">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-3.jpg" alt="Vasu and Mercy Havilah portrait 3" loading="lazy">
+            </div>
+            <figcaption>Joy and laughter in His light</figcaption>
+          </figure>
+
+          <!-- Photo 4: Quiet Devotion -->
+          <figure class="gallery-item" data-index="3">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-4.jpg" alt="Vasu and Mercy Havilah portrait 4" loading="lazy">
+            </div>
+            <figcaption>Joyful beginnings guided by love</figcaption>
+          </figure>
+
+          <!-- Photo 5: The Promise -->
+          <figure class="gallery-item" data-index="4">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-5.jpg" alt="Vasu and Mercy Havilah portrait 5" loading="lazy">
+            </div>
+            <figcaption>A cherished promise sealed before God</figcaption>
+          </figure>
+
+          <!-- Photo 6: Forever in Faith -->
+          <figure class="gallery-item" data-index="5">
+            <div class="media-frame">
+              <img data-gallery-image src="assets/images/gallery-6.jpg" alt="Vasu and Mercy Havilah portrait 6" loading="lazy">
+            </div>
+            <figcaption>Forever united in His holy love</figcaption>
+          </figure>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" data-reveal>
+          <a class="button button--gold" href="wedding-details.html">View Wedding Ceremony &amp; Maps &nbsp;↗</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- ================= SITE FOOTER ================= -->
   <footer class="site-footer">
     <div class="footer-content page-width">
       <div class="footer-cross" aria-hidden="true">✝</div>
-      <p class="footer-names"><span data-config="groomName">GROOM NAME</span> &amp; <span data-config="brideName">BRIDE NAME</span></p>
-      <p class="footer-note">With gratitude, we look forward to celebrating this blessed day with you.</p>
-      <div class="footer-contacts" aria-label="Wedding contact numbers"><span>Contact:</span>
-        <a data-footer-contact="0" href="#">CONTACT NUMBER 1</a>
-        <a data-footer-contact="1" href="#">CONTACT NUMBER 2</a>
-        <a data-footer-contact="2" href="#">CONTACT NUMBER 3</a>
+      <p class="footer-names"><span data-config="groomName">VASU</span> &amp; <span data-config="brideName">MERCY HAVILAH</span></p>
+      <p class="footer-note">“Two hearts, one faith, one beautiful journey — blessed by God.”</p>
+      
+      <div class="footer-contacts" aria-label="Wedding contact numbers">
+        <span>Contact for information:</span>
+        <a data-footer-contact="0" href="tel:+918978148996">+91 8978148996</a>
+        <a data-footer-contact="1" href="tel:+919652296062">+91 9652296062 (VASU)</a>
+        <a data-footer-contact="2" href="tel:+916281047922">+91 6281047922 (HOSHI)</a>
       </div>
-      <p class="copyright">Made with love · Wedding invitation</p>
+
+      <p class="copyright">Designed By ~Vinay · Made with Love</p>
     </div>
   </footer>
-  <audio id="background-music" preload="none" loop></audio><button class="music-control" id="music-control" type="button" aria-label="Play background music"><svg class="icon-note" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13.5A3.5 3.5 0 1 1 18 13V6.3l-7 1.3v7.9A3.5 3.5 0 1 1 9 18Z"/></svg><svg class="icon-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13.5A3.5 3.5 0 1 1 18 13V6.3l-7 1.3v7.9A3.5 3.5 0 1 1 9 18Z"/><path d="M2.4 1.1 22.9 21.6l-1.5 1.5L.9 2.6z"/></svg></button>
+
+  <!-- ================= FULLSCREEN LIGHTBOX MODAL ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" hidden>
+    <div class="lightbox-topbar">
+      <span class="lightbox-counter" id="lightbox-counter">1 / 6</span>
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close lightbox">&times;</button>
+    </div>
+    <div class="lightbox-content">
+      <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+      <div class="lightbox-img-wrap">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged gallery photo">
+      </div>
+      <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING CONTROLS ================= -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+  </button>
+
+  <audio id="background-music" preload="none" loop></audio>
+  <button class="music-control" id="music-control" type="button" aria-label="Play background music" title="Play wedding music">
+    <div class="music-equalizer" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <svg class="icon-muted" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M9 18V5l11-2v13.5A3.5 3.5 0 1 1 18 13V6.3l-7 1.3v7.9A3.5 3.5 0 1 1 9 18Z"/>
+      <path d="M2.4 1.1 22.9 21.6l-1.5 1.5L.9 2.6z"/>
+    </svg>
+  </button>
 </body>
 </html>
