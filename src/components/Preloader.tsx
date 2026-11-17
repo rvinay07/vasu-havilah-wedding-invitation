@@ -34,8 +34,8 @@ export const Preloader: React.FC = () => {
               transition={{ duration: 0.6, ease: 'easeInOut' }}
               className="h-[1.5px] bg-rose dark:bg-champagne mx-auto my-3"
             />
-            <p className="font-sans text-[0.68rem] tracking-[0.25em] text-plum-muted dark:text-champagne uppercase font-bold">
-              VASU &amp; MERCY HAVILAH
+            <p className="font-champagne text-xl sm:text-2xl text-plum dark:text-darktext-primary font-normal">
+              Vasu weds Mercy Havilah
             </p>
           </motion.div>
         </motion.div>

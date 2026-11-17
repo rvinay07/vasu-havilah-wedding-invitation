@@ -12,8 +12,10 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Names */}
-        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-white dark:text-darktext-primary mb-3">
-          {weddingConfig.groomName} &amp; {weddingConfig.brideName}
+        <h2 className="font-champagne text-3xl sm:text-4xl md:text-5xl font-normal tracking-wide text-white dark:text-darktext-primary mb-3">
+          <span>Vasu</span>
+          <span className="text-rose dark:text-champagne font-serif italic text-xl sm:text-2xl md:text-3xl mx-2">weds</span>
+          <span>Mercy Havilah</span>
         </h2>
 
         {/* Faith Note */}

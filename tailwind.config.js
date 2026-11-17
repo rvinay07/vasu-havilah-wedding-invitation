@@ -68,6 +68,7 @@ export default {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Garamond', 'Georgia', 'serif'],
         sans: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        champagne: ['Champagne', '"Cormorant Garamond"', 'Garamond', 'Georgia', 'serif'],
       },
       boxShadow: {
         'wedding': '0 10px 30px rgba(79, 55, 48, 0.08)',
