@@ -105,10 +105,10 @@ export const HomePage: React.FC = () => {
                 The wedding celebration of
               </p>
 
-              <h1 className="font-champagne text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-wide text-white dark:text-darktext-primary mb-3 gsap-hero-title">
-                <span>Vasu</span>
-                <span className="block italic text-2xl sm:text-3xl md:text-4xl text-rose dark:text-champagne font-serif my-0.5 sm:my-1.5">weds</span>
-                <span>Mercy Havilah</span>
+              <h1 className="font-champagne text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white dark:text-darktext-primary mb-3 leading-tight sm:leading-none gsap-hero-title">
+                <span className="inline-block whitespace-nowrap">Vasu</span>
+                <span className="text-rose dark:text-champagne font-serif italic inline-block mx-2 sm:mx-3 text-2xl sm:text-4xl md:text-5xl font-normal">&amp;</span>
+                <span className="inline-block whitespace-nowrap">Mercy Havilah</span>
               </h1>
 
               <div className="w-24 h-[1.5px] bg-rose dark:bg-champagne mx-auto my-4 gsap-hero-sub" />
@@ -161,9 +161,11 @@ export const HomePage: React.FC = () => {
 
               <p className="font-serif text-lg sm:text-xl text-plum-muted dark:text-darktext-secondary leading-relaxed mb-8 max-w-xl mx-auto">
                 With grateful hearts, we invite you to celebrate with us as{' '}
-                <strong className="text-2xl sm:text-3xl text-plum dark:text-darktext-primary font-semibold block my-2">
-                  Vasu weds Mercy Havilah
-                </strong>{' '}
+                <span className="font-champagne text-3xl sm:text-4xl md:text-5xl text-plum dark:text-darktext-primary font-normal block my-3 leading-snug">
+                  <span className="inline-block whitespace-nowrap">Vasu</span>
+                  <span className="text-rose dark:text-champagne font-serif italic text-2xl sm:text-3xl md:text-4xl mx-2 font-normal inline-block">&amp;</span>
+                  <span className="inline-block whitespace-nowrap">Mercy Havilah</span>
+                </span>{' '}
                 are united in holy matrimony. Your presence and prayers will mean the world to us as we begin this new chapter in Christ.
               </p>
 
@@ -251,7 +253,7 @@ export const HomePage: React.FC = () => {
               <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
                 The Groom
               </p>
-              <h3 className="font-champagne text-3xl sm:text-4xl font-normal text-plum dark:text-darktext-primary mb-2">
+              <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
                 Vasu
               </h3>
               <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">
@@ -282,7 +284,7 @@ export const HomePage: React.FC = () => {
               <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
                 The Bride
               </p>
-              <h3 className="font-champagne text-3xl sm:text-4xl font-normal text-plum dark:text-darktext-primary mb-2">
+              <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
                 Mercy Havilah
               </h3>
               <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">

@@ -298,8 +298,10 @@ export const Header: React.FC = () => {
                 <div className="text-rose dark:text-champagne text-2xl font-serif" aria-hidden="true">
                   ✝
                 </div>
-                <div className="font-serif text-2xl sm:text-3xl font-medium text-plum dark:text-darktext-primary">
-                  Vasu &amp; Mercy Havilah
+                <div className="font-champagne text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-normal leading-tight">
+                  <span className="inline-block whitespace-nowrap">Vasu</span>
+                  <span className="text-rose dark:text-champagne font-serif italic text-2xl sm:text-3xl mx-1.5 font-normal inline-block">&amp;</span>
+                  <span className="inline-block whitespace-nowrap">Mercy Havilah</span>
                 </div>
                 <div className="h-[1.5px] w-16 bg-rose/40 dark:bg-champagne/40 mx-auto" />
 

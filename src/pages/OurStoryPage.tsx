@@ -50,8 +50,8 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Groom
             </p>
-            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-plum dark:text-darktext-primary mb-2">
-              {weddingConfig.groomName}
+            <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
+              Vasu
             </h3>
             <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">
               <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-0.5">
@@ -86,8 +86,8 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Bride
             </p>
-            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-plum dark:text-darktext-primary mb-2">
-              {weddingConfig.brideName}
+            <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
+              Mercy Havilah
             </h3>
             <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">
               <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-0.5">
