@@ -21,43 +21,40 @@ A digital Christian wedding invitation celebrating the Holy Matrimony of **Vasu 
 
 ## 🎨 Dual Luxury Design System
 
-The application features a toggleable dual-palette system designed for visual elegance, letterpress aesthetics, and WCAG AAA compliance, defaulting to **Midnight Champagne Luxury**.
+The application features a toggleable dual-palette system with cool undertones (Cool Lavender & Lilac for Light Theme, Midnight Amethyst & Cool Lavender for Dark Theme), defaulting to **Midnight Amethyst**.
 
 ### 1. Hex Code Reference
 
-#### ☀️ Light Theme — Radiant Warm Editorial
+#### ☀️ Light Theme — Cool Lavender & Lilac
 | Token / Name | Hex Code | Purpose / Application |
 | :--- | :--- | :--- |
-| **Cream Page** | `#FAF5EE` | Main page background (warm parchment paper tone) |
+| **Neutral Page** | `#F8F7FA` | Main page background (frosty lavender-tinted white) |
 | **Card White** | `#FFFFFF` | Card surface & elevated module backdrop |
-| **Cream Soft / Wash** | `#FFEDDC` | Secondary warm badge, countdown box backgrounds |
-| **Cream Alt** | `#F3ECE1` | Alternating section backgrounds |
-| **Plum Brown (Text)** | `#4F3730` | Primary headings, high-contrast serif typography |
-| **Plum Soft** | `#70554D` | Secondary body text |
-| **Plum Muted** | `#8E736B` | Captions, dates, meta descriptions |
-| **Dusty Rose (Accent)** | `#C98271` | Primary CTA buttons, hearts (`♥`), romantic badges |
-| **Rose Light** | `#FBF0ED` | Pill tag background, subtle button hover |
-| **Olive Green (Accent)** | `#67724A` | Cross flourishes (`✝`), calendar buttons, section eyebrows |
-| **Olive Light** | `#F2F5EC` | Soft badge background |
-| **Pear Green (Accent)**| `#C2CCA8` | Completed milestone tags, borders, subtle highlights |
-| **Subtle Border** | `rgba(79, 55, 48, 0.12)` | Delicate card and divider borders |
+| **Soft Lilac** | `#EBE5F2` | Secondary badge, countdown box backgrounds, wash |
+| **Deep Obsidian (Text)** | `#261E33` | Primary headings, high-contrast serif typography |
+| **Muted Violet** | `#5C526B` | Secondary body text |
+| **Soft Violet** | `#827694` | Captions, dates, meta descriptions |
+| **Cool Lavender (Main)** | `#8B7BB8` | Primary CTA buttons, hearts (`♥`), romantic flourishes |
+| **Cool Slate (Accent)** | `#768A9E` | Cross flourishes (`✝`), calendar buttons, section eyebrows |
+| **Slate Tint** | `#8EA7BE` | Completed milestone tags, borders, subtle highlights |
+| **Subtle Border** | `rgba(38, 30, 51, 0.12)` | Delicate card and divider borders |
 
 ---
 
-#### 🌙 Dark Theme — Midnight Champagne Luxury (Default)
+#### 🌙 Dark Theme — Midnight Amethyst & Cool Lavender (Default)
 | Token / Name | Hex Code | Purpose / Application |
 | :--- | :--- | :--- |
-| **Midnight Base** | `#101820` | Primary deep navy page background |
-| **Midnight Subtle** | `#151F28` | Secondary container & hero gradient overlay |
-| **Midnight Card** | `#1B2732` | Card and module surface background |
-| **Midnight Elevated** | `#24313B` | Floating modals, dropdowns, hovered items |
-| **Midnight Border** | `#34424C` | Subtle dividers and card perimeter lines |
-| **Champagne Gold** | `#D6B878` | Primary CTA, regal highlights, active nav indicator |
-| **Champagne Hover** | `#E6CC91` | Button hover glow & interactive states |
-| **Champagne Soft** | `#F5EAD4` | Pill highlights and badges |
-| **Ivory Primary Text**| `#F1EBDD` | High-readability headings & body text (WCAG AAA) |
-| **Secondary Text** | `#C1C5C4` | Subheadings, dates, secondary details |
-| **Muted Text** | `#A0AAA9` | Footer captions, timestamps, disclaimers |
+| **Deep Obsidian Base** | `#130F19` | Primary deep amethyst-tinted obsidian page background |
+| **Subtle Amethyst** | `#1A1523` | Secondary container & hero gradient overlay |
+| **Midnight Amethyst Card**| `#231C2D` | Card and module surface background (Soft) |
+| **Elevated Amethyst** | `#2E253A` | Floating modals, dropdowns, hovered items |
+| **Border Amethyst** | `#3D334D` | Subtle dividers and card perimeter lines |
+| **Cool Lavender (Main)**| `#B8A3D9` | Primary CTA, regal highlights, active nav indicator |
+| **Lavender Hover** | `#C7B5E3` | Button hover glow & interactive states |
+| **Neutral Ivory Text** | `#ECE7F4` | High-readability headings & body text (WCAG AAA) |
+| **Secondary Text** | `#B8B0C7` | Subheadings, dates, secondary details |
+| **Muted Text** | `#8D839E` | Footer captions, timestamps, disclaimers |
+| **Cool Slate Accent** | `#8EA7BE` | Status badges, timeline nodes, accents |
 | **Sage Botanical** | `#A6B3A1` | Leaf motifs, status badges, timeline nodes |
 
 ---

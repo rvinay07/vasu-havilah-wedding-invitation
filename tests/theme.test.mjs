@@ -19,42 +19,42 @@ test('Design Tokens & Dual-Theme System Verification', async (t) => {
   const cssContent = fs.readFileSync(cssPath, 'utf8');
 
   await t.test('Light theme tokens are present and exact per specification', () => {
-    assert.match(tailwindContent, /#C98271/i, 'Dusty Rose #C98271 must exist');
-    assert.match(tailwindContent, /#67724A/i, 'Olive Green #67724A must exist');
-    assert.match(tailwindContent, /#C2CCA8/i, 'Soft Pear Green #C2CCA8 must exist');
-    assert.match(tailwindContent, /#FFEDDC/i, 'Cream White #FFEDDC must exist');
-    assert.match(tailwindContent, /#4F3730/i, 'Plum Brown #4F3730 must exist');
+    assert.match(tailwindContent, /#8B7BB8/i, 'Cool Lavender #8B7BB8 must exist');
+    assert.match(tailwindContent, /#768A9E/i, 'Cool Slate Grey #768A9E must exist');
+    assert.match(tailwindContent, /#8EA7BE/i, 'Slate Accent #8EA7BE must exist');
+    assert.match(tailwindContent, /#EBE5F2/i, 'Soft Lilac Mist #EBE5F2 must exist');
+    assert.match(tailwindContent, /#261E33/i, 'Deep Obsidian Violet #261E33 must exist');
 
-    assert.match(cssContent, /--color-rose:\s*#C98271/i, 'CSS --color-rose must be #C98271');
-    assert.match(cssContent, /--color-olive:\s*#67724A/i, 'CSS --color-olive must be #67724A');
-    assert.match(cssContent, /--color-pear:\s*#C2CCA8/i, 'CSS --color-pear must be #C2CCA8');
-    assert.match(cssContent, /--color-cream:\s*#FFEDDC/i, 'CSS --color-cream must be #FFEDDC');
-    assert.match(cssContent, /--color-plum:\s*#4F3730/i, 'CSS --color-plum must be #4F3730');
+    assert.match(cssContent, /--color-rose:\s*#8B7BB8/i, 'CSS --color-rose must be #8B7BB8');
+    assert.match(cssContent, /--color-olive:\s*#768A9E/i, 'CSS --color-olive must be #768A9E');
+    assert.match(cssContent, /--color-pear:\s*#8EA7BE/i, 'CSS --color-pear must be #8EA7BE');
+    assert.match(cssContent, /--color-cream:\s*#EBE5F2/i, 'CSS --color-cream must be #EBE5F2');
+    assert.match(cssContent, /--color-plum:\s*#261E33/i, 'CSS --color-plum must be #261E33');
 
-    assert.match(cssContent, /--bg-page:\s*#FAF5EE/i, 'CSS --bg-page must be #FAF5EE');
-    assert.match(cssContent, /--text-main:\s*#4F3730/i, 'CSS --text-main must be #4F3730');
+    assert.match(cssContent, /--bg-page:\s*#F8F7FA/i, 'CSS --bg-page must be #F8F7FA');
+    assert.match(cssContent, /--text-main:\s*#261E33/i, 'CSS --text-main must be #261E33');
   });
 
-  await t.test('Midnight Champagne Luxury dark theme tokens are present and exact', () => {
-    assert.match(tailwindContent, /#101820/i, 'Main background #101820 must exist');
-    assert.match(tailwindContent, /#151F28/i, 'Secondary background #151F28 must exist');
-    assert.match(tailwindContent, /#1B2732/i, 'Card background #1B2732 must exist');
-    assert.match(tailwindContent, /#24313B/i, 'Elevated surface #24313B must exist');
-    assert.match(tailwindContent, /#F1EBDD/i, 'Primary text #F1EBDD must exist');
-    assert.match(tailwindContent, /#C1C5C4/i, 'Secondary text #C1C5C4 must exist');
-    assert.match(tailwindContent, /#A0AAA9/i, 'Muted text #A0AAA9 must exist');
-    assert.match(tailwindContent, /#D6B878/i, 'Champagne gold #D6B878 must exist');
-    assert.match(tailwindContent, /#E6CC91/i, 'Gold hover #E6CC91 must exist');
-    assert.match(tailwindContent, /#A6B3A1/i, 'Sage accent #A6B3A1 must exist');
-    assert.match(tailwindContent, /#34424C/i, 'Border #34424C must exist');
+  await t.test('Midnight Amethyst & Cool Lavender dark theme tokens are present and exact', () => {
+    assert.match(tailwindContent, /#130F19/i, 'Main background #130F19 must exist');
+    assert.match(tailwindContent, /#1A1523/i, 'Secondary background #1A1523 must exist');
+    assert.match(tailwindContent, /#231C2D/i, 'Card background #231C2D must exist');
+    assert.match(tailwindContent, /#2E253A/i, 'Elevated surface #2E253A must exist');
+    assert.match(tailwindContent, /#ECE7F4/i, 'Primary text #ECE7F4 must exist');
+    assert.match(tailwindContent, /#B8B0C7/i, 'Secondary text #B8B0C7 must exist');
+    assert.match(tailwindContent, /#8D839E/i, 'Muted text #8D839E must exist');
+    assert.match(tailwindContent, /#B8A3D9/i, 'Cool Lavender #B8A3D9 must exist');
+    assert.match(tailwindContent, /#C7B5E3/i, 'Lavender hover #C7B5E3 must exist');
+    assert.match(tailwindContent, /#8EA7BE/i, 'Slate accent #8EA7BE must exist');
+    assert.match(tailwindContent, /#3D334D/i, 'Border #3D334D must exist');
   });
 
-  await t.test('CSS custom properties match Midnight Champagne theme', () => {
+  await t.test('CSS custom properties match Midnight Amethyst theme', () => {
     assert.match(cssContent, /\[data-theme="dark"\]/, 'Must declare [data-theme="dark"] selector');
-    assert.match(cssContent, /#101820/i, 'CSS dark --bg-page must use #101820');
-    assert.match(cssContent, /#1B2732/i, 'CSS dark --bg-card must use #1B2732');
-    assert.match(cssContent, /#F1EBDD/i, 'CSS dark --text-main must use #F1EBDD');
-    assert.match(cssContent, /#D6B878/i, 'CSS dark --champagne must use #D6B878');
+    assert.match(cssContent, /#130F19/i, 'CSS dark --bg-page must use #130F19');
+    assert.match(cssContent, /#231C2D/i, 'CSS dark --bg-card must use #231C2D');
+    assert.match(cssContent, /#ECE7F4/i, 'CSS dark --text-main must use #ECE7F4');
+    assert.match(cssContent, /#B8A3D9/i, 'CSS dark --champagne must use #B8A3D9');
   });
 });
 

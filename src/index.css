@@ -14,53 +14,53 @@
   }
 
 /* ============================================================
-   LIGHT THEME: Radiant Warm Editorial
+   LIGHT THEME: Cool Lavender & Lilac
    ============================================================ */
 :root {
-  --color-rose: #C98271;
-  --color-olive: #67724A;
-  --color-pear: #C2CCA8;
-  --color-cream: #FFEDDC;
-  --color-plum: #4F3730;
+  --color-rose: #8B7BB8;
+  --color-olive: #768A9E;
+  --color-pear: #8EA7BE;
+  --color-cream: #EBE5F2;
+  --color-plum: #261E33;
 
-  --bg-page: #FAF5EE;
+  --bg-page: #F8F7FA;
   --bg-card: #FFFFFF;
-  --bg-alt: #F3ECE1;
-  --bg-soft: #FFEDDC;
+  --bg-alt: #F2EEF7;
+  --bg-soft: #EBE5F2;
 
-  --text-main: #4F3730;
-  --text-muted: #70554D;
-  --text-soft: #8E736B;
+  --text-main: #261E33;
+  --text-muted: #5C526B;
+  --text-soft: #827694;
 
-  --border-rose: rgba(201, 130, 113, 0.35);
-  --border-subtle: rgba(79, 55, 48, 0.12);
-  --nav-glass: rgba(250, 245, 238, 0.94);
+  --border-rose: rgba(139, 123, 184, 0.35);
+  --border-subtle: rgba(38, 30, 51, 0.12);
+  --nav-glass: rgba(248, 247, 250, 0.94);
 }
 
 /* ============================================================
-   DARK THEME: Midnight Champagne Luxury
+   DARK THEME: Midnight Amethyst & Cool Lavender
    ============================================================ */
 [data-theme="dark"],
 .dark {
-  --bg-page: #101820;          /* Main background */
-  --bg-alt: #151F28;           /* Secondary background */
-  --bg-card: #1B2732;          /* Card background */
-  --bg-elevated: #24313B;      /* Elevated surfaces */
-  --bg-soft: #151F28;
+  --bg-page: #130F19;          /* Main background */
+  --bg-alt: #1A1523;           /* Secondary background */
+  --bg-card: #231C2D;          /* Card background */
+  --bg-elevated: #2E253A;      /* Elevated surfaces */
+  --bg-soft: #231C2D;
 
-  --text-main: #F1EBDD;        /* Primary text */
-  --text-secondary: #C1C5C4;   /* Secondary text */
-  --text-muted: #A0AAA9;       /* Muted text */
-  --text-soft: #A0AAA9;
+  --text-main: #ECE7F4;        /* Primary text */
+  --text-secondary: #B8B0C7;   /* Secondary text */
+  --text-muted: #8D839E;       /* Muted text */
+  --text-soft: #8D839E;
 
-  --champagne: #D6B878;        /* Champagne gold */
-  --champagne-hover: #E6CC91;  /* Gold hover */
-  --sage-accent: #A6B3A1;      /* Sage botanical accent */
-  --border: #34424C;           /* Borders */
+  --champagne: #B8A3D9;        /* Cool lavender */
+  --champagne-hover: #C7B5E3;  /* Lavender hover */
+  --sage-accent: #8EA7BE;      /* Cool slate grey */
+  --border: #3D334D;           /* Borders */
 
-  --border-rose: #34424C;
-  --border-subtle: #34424C;
-  --nav-glass: rgba(16, 24, 32, 0.96);
+  --border-rose: #3D334D;
+  --border-subtle: #3D334D;
+  --nav-glass: rgba(19, 15, 25, 0.96);
 }
 
   body {
@@ -111,19 +111,19 @@
 /* Music button pulse glow */
 @keyframes musicPulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(201, 130, 113, 0.5);
+    box-shadow: 0 0 0 0 rgba(139, 123, 184, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(201, 130, 113, 0);
+    box-shadow: 0 0 0 8px rgba(139, 123, 184, 0);
   }
 }
 
 @keyframes musicPulseDark {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(214, 184, 120, 0.5);
+    box-shadow: 0 0 0 0 rgba(184, 163, 217, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(214, 184, 120, 0);
+    box-shadow: 0 0 0 8px rgba(184, 163, 217, 0);
   }
 }
 
@@ -137,5 +137,5 @@
 
 /* Lightbox custom overrides */
 .yarl__portal {
-  --yarl__color_backdrop: rgba(16, 24, 32, 0.98) !important;
+  --yarl__color_backdrop: rgba(19, 15, 25, 0.98) !important;
 }

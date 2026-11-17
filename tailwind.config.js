@@ -8,61 +8,61 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Light Theme Colors
+        // Light Theme Colors (Cool Lavender & Lilac)
         rose: {
-          DEFAULT: '#C98271', // Dusty Rose
-          light: '#FBF0ED',
-          soft: '#F5E2DD',
-          dark: '#B36F5F',
-          deep: '#965345',
+          DEFAULT: '#8B7BB8', // Cool Lavender / Lilac
+          light: '#F4F0F9',
+          soft: '#EBE5F2',
+          dark: '#7363A3',
+          deep: '#5C4E8A',
         },
         olive: {
-          DEFAULT: '#67724A', // Olive Green
-          light: '#F2F5EC',
-          dark: '#505A36',
-          deep: '#3A4325',
+          DEFAULT: '#768A9E', // Cool Slate Grey
+          light: '#EEF2F6',
+          dark: '#5E7082',
+          deep: '#475666',
         },
         pear: {
-          DEFAULT: '#C2CCA8', // Soft Pear Green
-          light: '#F4F7EE',
-          pill: '#EBF0DF',
-          dark: '#9FA985',
+          DEFAULT: '#8EA7BE', // Slate Accent
+          light: '#F0F4F8',
+          pill: '#E2E9F0',
+          dark: '#6F879D',
         },
         cream: {
-          DEFAULT: '#FFEDDC', // Cream White
-          soft: '#FFF9F3',
-          warm: '#FAF5EE',
+          DEFAULT: '#EBE5F2', // Soft Lilac Mist
+          soft: '#F5F1FA',
+          warm: '#F8F7FA',   // Page Background (Neutral)
         },
         plum: {
-          DEFAULT: '#4F3730', // Plum Brown
-          soft: '#70554D',
-          muted: '#8E736B',
-          dark: '#3B2822',
-          midnight: '#1F1614',
+          DEFAULT: '#261E33', // Deep Obsidian Violet
+          soft: '#5C526B',
+          muted: '#827694',
+          dark: '#1C1626',
+          midnight: '#130F19',
         },
 
-        // Dark Theme Colors (Midnight Champagne)
+        // Dark Theme Colors (Midnight Amethyst & Cool Lavender)
         midnight: {
-          DEFAULT: '#101820', // Main background
-          subtle: '#151F28',  // Secondary background
-          card: '#1B2732',    // Card background
-          elevated: '#24313B',// Elevated surfaces
-          border: '#34424C',  // Border
+          DEFAULT: '#130F19', // Main Page Background (Deep)
+          subtle: '#1A1523',  // Secondary background
+          card: '#231C2D',    // Card Background (Soft)
+          elevated: '#2E253A',// Elevated surfaces
+          border: '#3D334D',  // Border line
         },
         champagne: {
-          DEFAULT: '#D6B878', // Champagne gold
-          hover: '#E6CC91',   // Gold hover
-          soft: '#F5EAD4',
-          glow: 'rgba(214, 184, 120, 0.35)',
+          DEFAULT: '#B8A3D9', // Cool Lavender (Main & Button)
+          hover: '#C7B5E3',   // Lavender hover
+          soft: '#ECE7F4',    // Frosty Lavender Neutral
+          glow: 'rgba(184, 163, 217, 0.35)',
         },
         darktext: {
-          primary: '#F1EBDD',   // Primary text
-          secondary: '#C1C5C4', // Secondary text
-          muted: '#A0AAA9',     // Muted text
+          primary: '#ECE7F4',   // Heading Colour (Neutral)
+          secondary: '#B8B0C7', // Secondary text
+          muted: '#8D839E',     // Muted text
         },
         darksage: {
-          DEFAULT: '#A6B3A1', // Sage accent
-          soft: 'rgba(166, 179, 161, 0.2)',
+          DEFAULT: '#8EA7BE', // Cool Slate Grey Accent
+          soft: 'rgba(142, 167, 190, 0.2)',
         }
       },
       fontFamily: {
@@ -71,11 +71,11 @@ export default {
         champagne: ['Champagne', '"Cormorant Garamond"', 'Garamond', 'Georgia', 'serif'],
       },
       boxShadow: {
-        'wedding': '0 10px 30px rgba(79, 55, 48, 0.08)',
-        'wedding-lg': '0 20px 50px rgba(79, 55, 48, 0.12)',
-        'rose-glow': '0 10px 25px rgba(201, 130, 113, 0.35)',
-        'olive-glow': '0 10px 25px rgba(103, 114, 74, 0.35)',
-        'champagne-glow': '0 10px 25px rgba(214, 184, 120, 0.35)',
+        'wedding': '0 10px 30px rgba(38, 30, 51, 0.08)',
+        'wedding-lg': '0 20px 50px rgba(38, 30, 51, 0.12)',
+        'rose-glow': '0 10px 25px rgba(139, 123, 184, 0.35)',
+        'olive-glow': '0 10px 25px rgba(118, 138, 158, 0.35)',
+        'champagne-glow': '0 10px 25px rgba(184, 163, 217, 0.35)',
       }
     },
   },
