@@ -105,10 +105,10 @@ export const HomePage: React.FC = () => {
                 The wedding celebration of
               </p>
 
-              <h1 className="font-champagne text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white dark:text-darktext-primary mb-3 leading-none gsap-hero-title">
-                <span className="block">Vasu</span>
-                <span className="block font-serif italic text-rose dark:text-champagne text-2xl sm:text-3xl md:text-4xl my-1 sm:my-2 font-normal leading-none" aria-hidden="true">&amp;</span>
-                <span className="block">Mercy Havilah</span>
+              <h1 className="font-champagne text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white dark:text-darktext-primary mb-3 leading-none gsap-hero-title">
+                <span className="block whitespace-nowrap">Vasu</span>
+                <span className="block font-serif italic text-rose dark:text-champagne text-xl sm:text-2xl md:text-3xl my-1 sm:my-2 font-normal leading-none" aria-hidden="true">&amp;</span>
+                <span className="block whitespace-nowrap">Mercy Havilah</span>
               </h1>
 
               <div className="w-24 h-[1.5px] bg-rose dark:bg-champagne mx-auto my-4 gsap-hero-sub" />
@@ -162,9 +162,9 @@ export const HomePage: React.FC = () => {
               <p className="font-serif text-lg sm:text-xl text-plum-muted dark:text-darktext-secondary leading-relaxed mb-8 max-w-xl mx-auto">
                 With grateful hearts, we invite you to celebrate with us as{' '}
                 <span className="font-champagne text-3xl sm:text-4xl md:text-5xl text-plum dark:text-darktext-primary font-normal block my-4 leading-none">
-                  <span className="block">Vasu</span>
+                  <span className="block whitespace-nowrap">Vasu</span>
                   <span className="block font-serif italic text-rose dark:text-champagne text-xl sm:text-2xl md:text-3xl my-1 font-normal leading-none" aria-hidden="true">&amp;</span>
-                  <span className="block">Mercy Havilah</span>
+                  <span className="block whitespace-nowrap">Mercy Havilah</span>
                 </span>{' '}
                 are united in holy matrimony. Your presence and prayers will mean the world to us as we begin this new chapter in Christ.
               </p>
@@ -253,8 +253,8 @@ export const HomePage: React.FC = () => {
               <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
                 The Groom
               </p>
-              <h3 className="font-champagne text-5xl sm:text-6xl md:text-7xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-6 leading-normal pb-1">
-                Vasu
+              <h3 className="font-champagne text-4xl sm:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
+                <span className="whitespace-nowrap">Vasu</span>
               </h3>
               <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
                 <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">
@@ -284,8 +284,8 @@ export const HomePage: React.FC = () => {
               <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
                 The Bride
               </p>
-              <h3 className="font-champagne text-5xl sm:text-6xl md:text-7xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-6 leading-normal pb-1">
-                Mercy Havilah
+              <h3 className="font-champagne text-4xl sm:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
+                <span className="whitespace-nowrap">Mercy Havilah</span>
               </h3>
               <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
                 <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">

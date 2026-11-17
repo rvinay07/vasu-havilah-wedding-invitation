@@ -13,9 +13,9 @@ export const Footer: React.FC = () => {
 
         {/* Names */}
         <h2 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-white dark:text-darktext-primary mb-4 leading-none">
-          <span className="block">Vasu</span>
+          <span className="block whitespace-nowrap">Vasu</span>
           <span className="block font-serif italic text-rose dark:text-champagne text-2xl sm:text-3xl md:text-4xl my-1 sm:my-1.5 font-normal leading-none" aria-hidden="true">&amp;</span>
-          <span className="block">Mercy Havilah</span>
+          <span className="block whitespace-nowrap">Mercy Havilah</span>
         </h2>
 
         {/* Faith Note */}

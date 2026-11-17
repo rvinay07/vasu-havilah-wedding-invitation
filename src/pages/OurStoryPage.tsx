@@ -50,8 +50,8 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Groom
             </p>
-            <h3 className="font-champagne text-5xl sm:text-6xl md:text-7xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-6 leading-normal pb-1">
-              Vasu
+            <h3 className="font-champagne text-4xl sm:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
+              <span className="whitespace-nowrap">Vasu</span>
             </h3>
             <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
               <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">
@@ -86,8 +86,8 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Bride
             </p>
-            <h3 className="font-champagne text-5xl sm:text-6xl md:text-7xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-6 leading-normal pb-1">
-              Mercy Havilah
+            <h3 className="font-champagne text-4xl sm:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
+              <span className="whitespace-nowrap">Mercy Havilah</span>
             </h3>
             <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
               <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">

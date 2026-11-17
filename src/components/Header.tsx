@@ -301,9 +301,9 @@ export const Header: React.FC = () => {
                   ✝
                 </div>
                 <div className="font-champagne text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-normal leading-none">
-                  <span className="block">Vasu</span>
+                  <span className="block whitespace-nowrap">Vasu</span>
                   <span className="block font-serif italic text-rose dark:text-champagne text-xl sm:text-2xl my-1 font-normal leading-none" aria-hidden="true">&amp;</span>
-                  <span className="block">Mercy Havilah</span>
+                  <span className="block whitespace-nowrap">Mercy Havilah</span>
                 </div>
                 <div className="h-[1.5px] w-16 bg-rose/40 dark:bg-champagne/40 mx-auto" />
 

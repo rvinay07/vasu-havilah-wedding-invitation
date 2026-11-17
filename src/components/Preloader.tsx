@@ -35,9 +35,9 @@ export const Preloader: React.FC = () => {
               className="h-[1.5px] bg-rose dark:bg-champagne mx-auto my-3"
             />
             <div className="font-champagne text-2xl sm:text-3xl md:text-4xl text-plum dark:text-darktext-primary font-normal tracking-wide leading-none">
-              <span className="block">Vasu</span>
+              <span className="block whitespace-nowrap">Vasu</span>
               <span className="block font-serif italic text-rose dark:text-champagne text-lg sm:text-xl md:text-2xl my-1 font-normal leading-none" aria-hidden="true">&amp;</span>
-              <span className="block">Mercy Havilah</span>
+              <span className="block whitespace-nowrap">Mercy Havilah</span>
             </div>
           </motion.div>
         </motion.div>
