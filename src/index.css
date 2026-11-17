@@ -3,49 +3,55 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-rose: #C08A8F;
-    --color-olive: #C0A08A;
-    --color-pear: #DDCFD1;
-    --color-cream: #F6F4F4;
-    --color-plum: #322526;
+/* ============================================================
+   LIGHT THEME: Radiant Warm Editorial
+   ============================================================ */
+:root {
+  --color-rose: #C98271;
+  --color-olive: #67724A;
+  --color-pear: #C2CCA8;
+  --color-cream: #FFEDDC;
+  --color-plum: #4F3730;
 
-    --bg-page: #F6F4F4;
-    --bg-card: #FFFFFF;
-    --bg-alt: #EFEAEA;
-    --bg-soft: #DDCFD1;
+  --bg-page: #FAF5EE;
+  --bg-card: #FFFFFF;
+  --bg-alt: #F3ECE1;
+  --bg-soft: #FFEDDC;
 
-    --text-main: #322526;
-    --text-muted: #544445;
-    --text-soft: #7A696A;
+  --text-main: #4F3730;
+  --text-muted: #70554D;
+  --text-soft: #8E736B;
 
-    --border-rose: rgba(192, 138, 143, 0.35);
-    --border-subtle: rgba(50, 37, 38, 0.12);
-    --nav-glass: rgba(246, 244, 244, 0.94);
-  }
+  --border-rose: rgba(201, 130, 113, 0.35);
+  --border-subtle: rgba(79, 55, 48, 0.12);
+  --nav-glass: rgba(250, 245, 238, 0.94);
+}
 
-  [data-theme="dark"] {
-    /* ── Midnight & Deep Luxury Dark Theme Tokens ── */
-    --bg-page: #1D1516;          /* Deep plum canvas background */
-    --bg-alt: #261D1E;           /* Secondary deep surface */
-    --bg-card: #322526;          /* Deep #322526 card surface */
-    --bg-elevated: #413234;      /* Elevated surface */
-    --bg-soft: #261D1E;
+/* ============================================================
+   DARK THEME: Midnight Champagne Luxury
+   ============================================================ */
+[data-theme="dark"],
+.dark {
+  --bg-page: #101820;          /* Main background */
+  --bg-alt: #151F28;           /* Secondary background */
+  --bg-card: #1B2732;          /* Card background */
+  --bg-elevated: #24313B;      /* Elevated surfaces */
+  --bg-soft: #151F28;
 
-    --text-main: #F6F4F4;        /* Neutral #F6F4F4 primary text */
-    --text-secondary: #DDCFD1;   /* Soft #DDCFD1 secondary text */
-    --text-muted: #A59496;       /* Muted text */
-    --text-soft: #A59496;
+  --text-main: #F1EBDD;        /* Primary text */
+  --text-secondary: #C1C5C4;   /* Secondary text */
+  --text-muted: #A0AAA9;       /* Muted text */
+  --text-soft: #A0AAA9;
 
-    --champagne: #C08A8F;        /* Main #C08A8F rose accent */
-    --champagne-hover: #D4A3A7;  /* Hover */
-    --sage-accent: #C0A08A;      /* Accent #C0A08A */
-    --border: #564345;           /* Border */
+  --champagne: #D6B878;        /* Champagne gold */
+  --champagne-hover: #E6CC91;  /* Gold hover */
+  --sage-accent: #A6B3A1;      /* Sage botanical accent */
+  --border: #34424C;           /* Borders */
 
-    --border-rose: #564345;
-    --border-subtle: #564345;
-    --nav-glass: rgba(29, 21, 22, 0.96);
-  }
+  --border-rose: #34424C;
+  --border-subtle: #34424C;
+  --nav-glass: rgba(16, 24, 32, 0.96);
+}
 
   body {
     background-color: var(--bg-page);
@@ -91,19 +97,19 @@
 /* Music button pulse glow */
 @keyframes musicPulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(192, 138, 143, 0.5);
+    box-shadow: 0 0 0 0 rgba(201, 130, 113, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(192, 138, 143, 0);
+    box-shadow: 0 0 0 8px rgba(201, 130, 113, 0);
   }
 }
 
 @keyframes musicPulseDark {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(192, 138, 143, 0.5);
+    box-shadow: 0 0 0 0 rgba(214, 184, 120, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(192, 138, 143, 0);
+    box-shadow: 0 0 0 8px rgba(214, 184, 120, 0);
   }
 }
 
@@ -117,5 +123,5 @@
 
 /* Lightbox custom overrides */
 .yarl__portal {
-  --yarl__color_backdrop: rgba(29, 21, 22, 0.98) !important;
+  --yarl__color_backdrop: rgba(16, 24, 32, 0.98) !important;
 }

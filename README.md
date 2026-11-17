@@ -21,21 +21,44 @@ A digital Christian wedding invitation celebrating the Holy Matrimony of **Vasu 
 
 ## 🎨 Dual Luxury Design System
 
-The application features a toggleable dual-palette system designed for visual elegance, letterpress aesthetics, and WCAG AAA compliance.
+The application features a toggleable dual-palette system designed for visual elegance, letterpress aesthetics, and WCAG AAA compliance, defaulting to **Midnight Champagne Luxury**.
 
-### 1. Palette Specification (Light Theme)
-* **Main / Primary Colour / Button Background** (`#C08A8F`): Romantic badges, primary CTAs, heart flourishes, and button backgrounds.
-* **Accent / Secondary Colour** (`#C0A08A`): Botanical cross accents (`✝`), section eyebrows, secondary calendar buttons.
-* **Soft** (`#DDCFD1`): Completed milestone tags, delicate card borders, soft badge pills.
-* **Neutral / Page Background** (`#F6F4F4`): Neutral stationery page background wash and countdown backdrops.
-* **Deep / Heading Colour / Button Text** (`#322526`): High-contrast letterpress serif typography, headings, button labels, hero gradients, and site footer.
+### 1. Hex Code Reference
 
-### 2. Midnight & Deep Luxury Dark Theme
-* **Canvas Background** (`#1D1516`): Deep plum base background.
-* **Card Surface** (`#322526`): Deep contrasting cards and interactive module surfaces.
-* **Main Accent** (`#C08A8F`): Regal highlights, primary buttons, active navigation indicator line.
-* **Soft Secondary** (`#DDCFD1`): Secondary text and delicate borders.
-* **Primary Text** (`#F6F4F4`): Soft warm primary text with WCAG readability.
+#### ☀️ Light Theme — Radiant Warm Editorial
+| Token / Name | Hex Code | Purpose / Application |
+| :--- | :--- | :--- |
+| **Cream Page** | `#FAF5EE` | Main page background (warm parchment paper tone) |
+| **Card White** | `#FFFFFF` | Card surface & elevated module backdrop |
+| **Cream Soft / Wash** | `#FFEDDC` | Secondary warm badge, countdown box backgrounds |
+| **Cream Alt** | `#F3ECE1` | Alternating section backgrounds |
+| **Plum Brown (Text)** | `#4F3730` | Primary headings, high-contrast serif typography |
+| **Plum Soft** | `#70554D` | Secondary body text |
+| **Plum Muted** | `#8E736B` | Captions, dates, meta descriptions |
+| **Dusty Rose (Accent)** | `#C98271` | Primary CTA buttons, hearts (`♥`), romantic badges |
+| **Rose Light** | `#FBF0ED` | Pill tag background, subtle button hover |
+| **Olive Green (Accent)** | `#67724A` | Cross flourishes (`✝`), calendar buttons, section eyebrows |
+| **Olive Light** | `#F2F5EC` | Soft badge background |
+| **Pear Green (Accent)**| `#C2CCA8` | Completed milestone tags, borders, subtle highlights |
+| **Subtle Border** | `rgba(79, 55, 48, 0.12)` | Delicate card and divider borders |
+
+---
+
+#### 🌙 Dark Theme — Midnight Champagne Luxury (Default)
+| Token / Name | Hex Code | Purpose / Application |
+| :--- | :--- | :--- |
+| **Midnight Base** | `#101820` | Primary deep navy page background |
+| **Midnight Subtle** | `#151F28` | Secondary container & hero gradient overlay |
+| **Midnight Card** | `#1B2732` | Card and module surface background |
+| **Midnight Elevated** | `#24313B` | Floating modals, dropdowns, hovered items |
+| **Midnight Border** | `#34424C` | Subtle dividers and card perimeter lines |
+| **Champagne Gold** | `#D6B878` | Primary CTA, regal highlights, active nav indicator |
+| **Champagne Hover** | `#E6CC91` | Button hover glow & interactive states |
+| **Champagne Soft** | `#F5EAD4` | Pill highlights and badges |
+| **Ivory Primary Text**| `#F1EBDD` | High-readability headings & body text (WCAG AAA) |
+| **Secondary Text** | `#C1C5C4` | Subheadings, dates, secondary details |
+| **Muted Text** | `#A0AAA9` | Footer captions, timestamps, disclaimers |
+| **Sage Botanical** | `#A6B3A1` | Leaf motifs, status badges, timeline nodes |
 
 ---
 

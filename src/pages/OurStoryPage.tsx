@@ -241,7 +241,7 @@ export const OurStoryPage: React.FC = () => {
         <div className="text-center mt-16">
           <Link
             to="/wedding-details"
-            className="inline-flex items-center justify-center gap-2 max-w-full px-5 sm:px-8 py-3.5 rounded-md bg-rose dark:bg-champagne hover:bg-rose-dark dark:hover:bg-champagne-hover text-plum dark:text-midnight font-sans text-xs uppercase tracking-wider sm:tracking-widest font-bold shadow-rose-glow dark:shadow-champagne-glow transition-all text-center"
+            className="inline-flex items-center justify-center gap-2 max-w-full px-5 sm:px-8 py-3.5 rounded-md bg-rose dark:bg-champagne hover:bg-rose-dark dark:hover:bg-champagne-hover text-white dark:text-midnight font-sans text-xs uppercase tracking-wider sm:tracking-widest font-bold shadow-rose-glow dark:shadow-champagne-glow transition-all text-center"
           >
             <span>View Wedding Ceremony &amp; Venues</span>
             <ArrowRight className="w-4 h-4 shrink-0" />
