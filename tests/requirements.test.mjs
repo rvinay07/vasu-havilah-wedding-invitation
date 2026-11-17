@@ -134,6 +134,24 @@ test('Strict Business Rules & Prohibitions Verification', async (t) => {
     assert.match(content, /<NavLink[^>]+to=\{link\.to\}[^>]+onClick=\{closeMenu\}/);
   });
 
+  await t.test('Solemnization of marriage details are placed above countdown on Home and Wedding Details pages', () => {
+    const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf8');
+    const detailsContent = fs.readFileSync(path.join(ROOT, 'src/pages/WeddingDetailsPage.tsx'), 'utf8');
+
+    for (const [name, content] of [['HomePage', homeContent], ['WeddingDetailsPage', detailsContent]]) {
+      assert.match(content, /SOLEMNIZATION OF MARRIAGE/i, `${name} must include SOLEMNIZATION OF MARRIAGE`);
+      assert.match(content, /MARRIAGE OFFICIANT/i, `${name} must include MARRIAGE OFFICIANT`);
+      assert.match(content, /weddingConfig\.minister\.name/, `${name} must render minister 1 name`);
+      assert.match(content, /weddingConfig\.minister\.officiantName/, `${name} must render minister 2 name`);
+
+      const solemnizationIndex = content.indexOf('SOLEMNIZATION OF MARRIAGE');
+      const countdownIndex = content.indexOf('<Countdown');
+      assert.ok(solemnizationIndex !== -1, `${name} must contain SOLEMNIZATION OF MARRIAGE`);
+      assert.ok(countdownIndex !== -1, `${name} must contain Countdown`);
+      assert.ok(solemnizationIndex < countdownIndex, `${name}: Solemnization of marriage must be positioned above Countdown`);
+    }
+  });
+
   await t.test('3D wax seal and physical book invitations are completely removed', () => {
     const appPath = path.join(ROOT, 'src/App.tsx');
     const appContent = fs.readFileSync(appPath, 'utf8');

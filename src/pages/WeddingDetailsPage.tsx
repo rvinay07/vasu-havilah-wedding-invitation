@@ -81,6 +81,50 @@ export const WeddingDetailsPage: React.FC = () => {
                 </div>
               </div>
 
+              {/* Solemnization of Marriage & Marriage Officiants */}
+              <div className="p-5 sm:p-6 rounded-2xl bg-cream-soft/80 dark:bg-midnight-elevated/40 border border-rose/20 dark:border-midnight-border">
+                <h4 className="text-xs uppercase tracking-[0.22em] text-olive dark:text-champagne font-bold mb-4 text-center">
+                  ✝ SOLEMNIZATION OF MARRIAGE ✝
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {/* Officiant 1 */}
+                  <div className="p-4 sm:p-5 rounded-xl bg-white/80 dark:bg-midnight-card/80 border border-rose/15 dark:border-midnight-border text-center flex flex-col justify-between">
+                    <div>
+                      <p className="text-[0.68rem] uppercase tracking-[0.2em] text-rose dark:text-champagne font-bold mb-1.5">
+                        MARRIAGE OFFICIANT
+                      </p>
+                      <h5 className="font-serif text-lg sm:text-xl font-semibold text-plum dark:text-darktext-primary mb-1">
+                        {weddingConfig.minister.name}
+                      </h5>
+                    </div>
+                    <div>
+                      <div className="w-10 h-[1px] bg-rose/40 dark:bg-champagne/40 mx-auto my-2.5" />
+                      <p className="font-serif italic text-xs sm:text-sm text-plum-muted dark:text-darktext-secondary">
+                        {weddingConfig.minister.church || weddingConfig.minister.role}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Officiant 2 */}
+                  <div className="p-4 sm:p-5 rounded-xl bg-white/80 dark:bg-midnight-card/80 border border-rose/15 dark:border-midnight-border text-center flex flex-col justify-between">
+                    <div>
+                      <p className="text-[0.68rem] uppercase tracking-[0.2em] text-rose dark:text-champagne font-bold mb-1.5">
+                        MARRIAGE OFFICIANT
+                      </p>
+                      <h5 className="font-serif text-lg sm:text-xl font-semibold text-plum dark:text-darktext-primary mb-1">
+                        {weddingConfig.minister.officiantName}
+                      </h5>
+                    </div>
+                    <div>
+                      <div className="w-10 h-[1px] bg-rose/40 dark:bg-champagne/40 mx-auto my-2.5" />
+                      <p className="font-serif italic text-xs sm:text-sm text-plum-muted dark:text-darktext-secondary">
+                        {weddingConfig.minister.officiantChurch}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="p-5 rounded-2xl bg-cream/50 dark:bg-midnight-elevated/60 border border-rose/20 dark:border-midnight-border">
                 <Countdown targetDate={ceremony.date} label="Countdown to Holy Matrimony" />
               </div>

@@ -63,9 +63,33 @@ export const weddingConfig = {
 
   minister: {
     heading: "The Minister of the Ceremony",
+    sectionHeading: "Solemnization of Marriage",
+    displaySectionHeading: "✝ SOLEMNIZATION OF MARRIAGE ✝",
     name: "Rev. A. P. Solomon Vijay Raj",
-    role: "Officiating the Holy Matrimony & Pastoral Blessing"
+    title: "MARRIAGE OFFICIANT",
+    church: "Agape A.G Church - Guntakal",
+    role: "Agape A.G Church - Guntakal",
+    officiantName: "Pastor S. Gnana Jaya Prakash",
+    officiantChurch: "Bethlehem Gospel Ministries",
+    officiantTitle: "MARRIAGE OFFICIANT"
   } as MinisterDetail,
+
+  ministers: [
+    {
+      heading: "SOLEMNIZATION OF MARRIAGE",
+      title: "MARRIAGE OFFICIANT",
+      name: "Rev. A. P. Solomon Vijay Raj",
+      church: "Agape A.G Church - Guntakal",
+      role: "Agape A.G Church - Guntakal"
+    },
+    {
+      heading: "SOLEMNIZATION OF MARRIAGE",
+      title: "MARRIAGE OFFICIANT",
+      name: "Pastor S. Gnana Jaya Prakash",
+      church: "Bethlehem Gospel Ministries",
+      role: "Bethlehem Gospel Ministries"
+    }
+  ] as MinisterDetail[],
 
   milestones: [
     {
