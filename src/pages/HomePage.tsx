@@ -105,13 +105,13 @@ export const HomePage: React.FC = () => {
                 The wedding celebration of
               </p>
 
-              <h1 className="font-champagne text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-normal text-white dark:text-darktext-primary mb-3 leading-tight gsap-hero-title flex flex-col md:flex-row items-center justify-center md:gap-3 lg:gap-4">
-                <span className="whitespace-nowrap">Vasu</span>
-                <span className="font-serif italic text-rose dark:text-champagne text-xl sm:text-2xl md:text-3xl lg:text-4xl my-0.5 sm:my-1 md:my-0 font-normal leading-none" aria-hidden="true">&amp;</span>
-                <span className="whitespace-nowrap">Mercy Havilah</span>
+              <h1 className="font-champagne text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-normal text-white dark:text-darktext-primary pb-2 mb-6 sm:mb-8 leading-normal gsap-hero-title">
+                <span className="block md:inline whitespace-nowrap">Vasu</span>{' '}
+                <span className="block md:inline text-rose dark:text-champagne font-champagne my-1 md:my-0 md:mx-3" aria-hidden="true">&amp;</span>{' '}
+                <span className="block md:inline whitespace-nowrap">Mercy Havilah</span>
               </h1>
 
-              <div className="my-3 max-w-lg mx-auto px-2 gsap-hero-sub">
+              <div className="mt-4 mb-6 max-w-lg mx-auto px-2 gsap-hero-sub">
                 <p className="font-serif italic text-base sm:text-lg text-cream/90 dark:text-darktext-secondary leading-relaxed">
                   “{weddingConfig.coreVerse.quote}”
                 </p>
@@ -180,10 +180,10 @@ export const HomePage: React.FC = () => {
 
               <p className="font-serif text-lg sm:text-xl text-plum-muted dark:text-darktext-secondary leading-relaxed mb-8 max-w-xl mx-auto">
                 With grateful hearts, we invite you to celebrate with us as{' '}
-                <span className="font-champagne text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-plum dark:text-darktext-primary font-normal my-4 leading-normal flex flex-col md:flex-row items-center justify-center md:gap-2.5">
-                  <span className="whitespace-nowrap">Vasu</span>
-                  <span className="font-serif italic text-rose dark:text-champagne text-xl sm:text-2xl md:text-2xl lg:text-3xl my-0.5 md:my-0 font-normal leading-none" aria-hidden="true">&amp;</span>
-                  <span className="whitespace-nowrap">Mercy Havilah</span>
+                <span className="font-champagne text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-plum dark:text-darktext-primary font-normal block my-4 leading-normal">
+                  <span className="block md:inline whitespace-nowrap">Vasu</span>{' '}
+                  <span className="block md:inline text-rose dark:text-champagne font-champagne my-1 md:my-0 md:mx-2.5" aria-hidden="true">&amp;</span>{' '}
+                  <span className="block md:inline whitespace-nowrap">Mercy Havilah</span>
                 </span>{' '}
                 are united in holy matrimony. Your presence and prayers will mean the world to us as we begin this new chapter in Christ.
               </p>
@@ -405,11 +405,10 @@ export const HomePage: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between gap-2 mb-2">
                       <span
-                        className={`text-[0.62rem] uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-full ${
-                          isCompleted
-                            ? 'bg-pear-pill dark:bg-midnight-elevated text-olive dark:text-darksage'
-                            : 'bg-rose-light dark:bg-midnight-elevated text-rose-deep dark:text-champagne'
-                        }`}
+                        className={`text-[0.62rem] uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-full ${isCompleted
+                          ? 'bg-pear-pill dark:bg-midnight-elevated text-olive dark:text-darksage'
+                          : 'bg-rose-light dark:bg-midnight-elevated text-rose-deep dark:text-champagne'
+                          }`}
                       >
                         {milestone.badge}
                       </span>

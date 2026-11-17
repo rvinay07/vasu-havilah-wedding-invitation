@@ -9,19 +9,19 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 
 describe('Typography & Layout Consistency', () => {
-  it('Hero heading enforces responsive layout: stacked on mobile (flex-col) and single line on desktop (md:flex-row) with whitespace-nowrap', () => {
+  it('Hero heading enforces responsive layout: stacked on mobile (block) and single line on desktop (md:inline) with natural baseline & glyph', () => {
     const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf-8');
-    assert.match(homeContent, /<h1 className="[^"]*font-champagne[^"]*"/);
-    assert.match(homeContent, /<h1 className="[^"]*flex flex-col md:flex-row[^"]*"/);
-    assert.match(homeContent, /<span className="whitespace-nowrap">Vasu<\/span>/);
-    assert.match(homeContent, /<span className="whitespace-nowrap">Mercy Havilah<\/span>/);
+    assert.match(homeContent, /<h1 className="[^"]*font-champagne[^"]*gsap-hero-title/);
+    assert.match(homeContent, /<span className="block md:inline whitespace-nowrap">Vasu<\/span>/);
+    assert.match(homeContent, /<span className="block md:inline text-rose dark:text-champagne font-champagne[^"]*"[^>]*>&amp;<\/span>/);
+    assert.match(homeContent, /<span className="block md:inline whitespace-nowrap">Mercy Havilah<\/span>/);
   });
 
-  it('Joyful Invitation enforces responsive layout: stacked on mobile (flex-col) and single line on desktop (md:flex-row) with whitespace-nowrap', () => {
+  it('Joyful Invitation enforces responsive layout: stacked on mobile (block) and single line on desktop (md:inline)', () => {
     const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf-8');
-    assert.match(homeContent, /<span className="font-champagne[^"]*flex flex-col md:flex-row/);
-    assert.match(homeContent, /<span className="whitespace-nowrap">Vasu<\/span>/);
-    assert.match(homeContent, /<span className="whitespace-nowrap">Mercy Havilah<\/span>/);
+    assert.match(homeContent, /<span className="block md:inline whitespace-nowrap">Vasu<\/span>/);
+    assert.match(homeContent, /<span className="block md:inline text-rose dark:text-champagne font-champagne[^"]*"[^>]*>&amp;<\/span>/);
+    assert.match(homeContent, /<span className="block md:inline whitespace-nowrap">Mercy Havilah<\/span>/);
   });
 
   it('HomePage portrait cards enforce font size, clearance and whitespace-nowrap', () => {
@@ -38,25 +38,26 @@ describe('Typography & Layout Consistency', () => {
     assert.match(ourStoryContent, /<div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">/);
   });
 
-  it('Footer enforces responsive layout: stacked on mobile (flex-col) and single line on desktop (md:flex-row) with whitespace-nowrap', () => {
+  it('Footer enforces responsive layout: stacked on mobile (block) and single line on desktop (md:inline)', () => {
     const footerContent = fs.readFileSync(path.join(ROOT, 'src/components/Footer.tsx'), 'utf-8');
-    assert.match(footerContent, /<h2 className="font-champagne[^"]*flex flex-col md:flex-row/);
-    assert.match(footerContent, /<span className="whitespace-nowrap">Vasu<\/span>/);
-    assert.match(footerContent, /<span className="whitespace-nowrap">Mercy Havilah<\/span>/);
+    assert.match(footerContent, /<span className="block md:inline whitespace-nowrap">Vasu<\/span>/);
+    assert.match(footerContent, /<span className="block md:inline text-rose dark:text-champagne font-champagne[^"]*"[^>]*>&amp;<\/span>/);
+    assert.match(footerContent, /<span className="block md:inline whitespace-nowrap">Mercy Havilah<\/span>/);
   });
 
-  it('Header mobile drawer enforces 3-line stacked format with whitespace-nowrap', () => {
+  it('Header mobile drawer enforces 3-line stacked format with whitespace-nowrap and cursive ampersand', () => {
     const headerContent = fs.readFileSync(path.join(ROOT, 'src/components/Header.tsx'), 'utf-8');
-    assert.match(headerContent, /<div className="font-champagne text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-normal leading-none">/);
+    assert.match(headerContent, /<div className="font-champagne text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-normal leading-normal">/);
     assert.match(headerContent, /<span className="block whitespace-nowrap">Vasu<\/span>/);
+    assert.match(headerContent, /<span className="block text-rose dark:text-champagne font-champagne[^"]*"[^>]*>&amp;<\/span>/);
     assert.match(headerContent, /<span className="block whitespace-nowrap">Mercy Havilah<\/span>/);
   });
 
   it('Preloader splash enforces responsive layout with whitespace-nowrap', () => {
     const preloaderContent = fs.readFileSync(path.join(ROOT, 'src/components/Preloader.tsx'), 'utf-8');
-    assert.match(preloaderContent, /<div className="font-champagne[^"]*flex flex-col md:flex-row/);
-    assert.match(preloaderContent, /<span className="whitespace-nowrap">Vasu<\/span>/);
-    assert.match(preloaderContent, /<span className="whitespace-nowrap">Mercy Havilah<\/span>/);
+    assert.match(preloaderContent, /<span className="block md:inline whitespace-nowrap">Vasu<\/span>/);
+    assert.match(preloaderContent, /<span className="block md:inline text-rose dark:text-champagne font-champagne[^"]*"[^>]*>&amp;<\/span>/);
+    assert.match(preloaderContent, /<span className="block md:inline whitespace-nowrap">Mercy Havilah<\/span>/);
   });
 
   it('Top Hero section on HomePage displays Mark 10:9 in elegant italics beneath couple names', () => {
