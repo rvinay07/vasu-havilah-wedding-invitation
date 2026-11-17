@@ -34,11 +34,11 @@ export const Preloader: React.FC = () => {
               transition={{ duration: 0.6, ease: 'easeInOut' }}
               className="h-[1.5px] bg-rose dark:bg-champagne mx-auto my-3"
             />
-            <p className="font-champagne text-2xl sm:text-3xl md:text-4xl text-plum dark:text-darktext-primary font-normal tracking-wide leading-tight">
-              <span>Vasu</span>
-              <span className="text-rose dark:text-champagne font-serif italic text-xl sm:text-2xl md:text-3xl mx-2 font-normal">&amp;</span>
-              <span>Mercy Havilah</span>
-            </p>
+            <div className="font-champagne text-2xl sm:text-3xl md:text-4xl text-plum dark:text-darktext-primary font-normal tracking-wide leading-none">
+              <span className="block">Vasu</span>
+              <span className="block font-serif italic text-rose dark:text-champagne text-lg sm:text-xl md:text-2xl my-1 font-normal leading-none" aria-hidden="true">&amp;</span>
+              <span className="block">Mercy Havilah</span>
+            </div>
           </motion.div>
         </motion.div>
       )}

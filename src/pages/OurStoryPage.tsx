@@ -50,11 +50,11 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Groom
             </p>
-            <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
+            <h3 className="font-champagne text-3xl sm:text-4xl md:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
               Vasu
             </h3>
-            <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">
-              <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-0.5">
+            <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
+              <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">
                 Beloved son of
               </span>
               <p className="text-sm font-serif text-plum dark:text-darktext-primary">
@@ -86,11 +86,11 @@ export const OurStoryPage: React.FC = () => {
             <p className="text-xs uppercase tracking-widest text-rose dark:text-champagne font-bold mb-1">
               The Bride
             </p>
-            <h3 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-plum dark:text-darktext-primary mb-2 leading-tight">
+            <h3 className="font-champagne text-3xl sm:text-4xl md:text-5xl font-normal text-plum dark:text-darktext-primary mb-4 sm:mb-5 leading-normal pb-1">
               Mercy Havilah
             </h3>
-            <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium">
-              <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-0.5">
+            <div className="text-xs text-plum-muted dark:text-darktext-secondary font-medium pt-1">
+              <span className="block text-plum-soft dark:text-darktext-muted text-[0.68rem] uppercase tracking-wider mb-1">
                 Beloved daughter of
               </span>
               <p className="text-sm font-serif text-plum dark:text-darktext-primary">
