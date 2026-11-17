@@ -23,17 +23,17 @@ export const AmbientCanvas: React.FC<{ className?: string }> = ({ className = ''
     const isDark = () => document.documentElement.getAttribute('data-theme') === 'dark';
 
     const lightColors = [
-      'rgba(201, 130, 113, ', // Dusty Rose
-      'rgba(103, 114, 74, ',  // Olive Green
-      'rgba(194, 204, 168, ', // Soft Pear Green
-      'rgba(255, 237, 220, ', // Cream White
+      'rgba(192, 138, 143, ', // Main (#C08A8F)
+      'rgba(192, 160, 138, ', // Accent (#C0A08A)
+      'rgba(221, 207, 209, ', // Soft (#DDCFD1)
+      'rgba(246, 244, 244, ', // Neutral (#F6F4F4)
     ];
 
     const darkColors = [
-      'rgba(214, 184, 120, ', // Champagne Gold (#D6B878)
-      'rgba(241, 235, 221, ', // Primary Ivory (#F1EBDD)
-      'rgba(166, 179, 161, ', // Sage Accent (#A6B3A1)
-      'rgba(230, 204, 145, ', // Gold Hover (#E6CC91)
+      'rgba(192, 138, 143, ', // Main (#C08A8F)
+      'rgba(246, 244, 244, ', // Neutral (#F6F4F4)
+      'rgba(192, 160, 138, ', // Accent (#C0A08A)
+      'rgba(221, 207, 209, ', // Soft (#DDCFD1)
     ];
 
     const particleCount = Math.min(36, Math.floor((width * height) / 25000));

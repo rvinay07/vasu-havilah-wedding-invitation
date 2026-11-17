@@ -146,7 +146,7 @@ export const FloatingControls: React.FC = () => {
           data-testid="music-toggle"
           className={`group flex items-center gap-2 sm:gap-2.5 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full backdrop-blur-md shadow-lg transition-all duration-300 touch-manipulation focus:outline-none focus-visible:ring-2 focus-visible:ring-rose dark:focus-visible:ring-champagne active:scale-95 border-2 ${
             isPlaying
-              ? 'bg-rose text-white dark:bg-champagne dark:text-midnight border-white/60 dark:border-midnight-border shadow-rose-glow dark:shadow-champagne-glow animate-music-pulse'
+              ? 'bg-rose text-plum dark:bg-champagne dark:text-midnight border-white/60 dark:border-midnight-border shadow-rose-glow dark:shadow-champagne-glow animate-music-pulse'
               : 'bg-white/95 dark:bg-midnight-card/95 text-rose dark:text-champagne border-rose dark:border-champagne hover:bg-rose-light/20 dark:hover:bg-champagne/10 shadow-md'
           }`}
           aria-label={isPlaying ? 'Turn music off' : 'Turn music on'}

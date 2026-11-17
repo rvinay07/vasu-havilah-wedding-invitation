@@ -19,24 +19,23 @@ A digital Christian wedding invitation celebrating the Holy Matrimony of **Vasu 
 
 ---
 
-## 🎨 Dual Luxury Design System (Default: Dark Mode)
+## 🎨 Dual Luxury Design System
 
-The application features a toggleable dual-palette system designed for visual elegance, letterpress aesthetics, and WCAG AAA compliance, defaulting to **Midnight Champagne Luxury**.
+The application features a toggleable dual-palette system designed for visual elegance, letterpress aesthetics, and WCAG AAA compliance.
 
-### 1. Midnight Champagne Luxury (Default Dark Theme)
-* **Midnight Canvas** (`#101820`): Deep navy base background with early inline initialization to prevent flash of wrong theme.
-* **Midnight Card Surface** (`#1B2732`): Subtle contrasting cards and interactive module surfaces.
-* **Champagne Gold** (`#D6B878`): Regal highlights, primary buttons, active navigation indicator line.
-* **Gold Hover** (`#E6CC91`): Interactive hover glow and button transitions.
-* **Sage Botanical Accent** (`#A6B3A1`): Delicate leaf accents and completed timeline node pills.
-* **Ivory Typography** (`#F1EBDD`): Soft warm primary text with WCAG AAA readability.
+### 1. Palette Specification (Light Theme)
+* **Main / Primary Colour / Button Background** (`#C08A8F`): Romantic badges, primary CTAs, heart flourishes, and button backgrounds.
+* **Accent / Secondary Colour** (`#C0A08A`): Botanical cross accents (`✝`), section eyebrows, secondary calendar buttons.
+* **Soft** (`#DDCFD1`): Completed milestone tags, delicate card borders, soft badge pills.
+* **Neutral / Page Background** (`#F6F4F4`): Neutral stationery page background wash and countdown backdrops.
+* **Deep / Heading Colour / Button Text** (`#322526`): High-contrast letterpress serif typography, headings, button labels, hero gradients, and site footer.
 
-### 2. Radiant Warm Editorial (Light Theme)
-* **Dusty Rose** (`#C98271`): Romantic badges, primary CTAs, heart flourishes (`♥`), monogram accents.
-* **Olive Green** (`#67724A`): Botanical cross accents (`✝`), section eyebrows, secondary calendar buttons.
-* **Soft Pear Green** (`#C2CCA8`): Completed milestone tags, delicate card borders, soft badge pills.
-* **Cream White** (`#FFEDDC` / `#FAF5EE`): Warm stationery parchment washes, card surfaces, countdown backdrops.
-* **Plum Brown** (`#4F3730`): High-contrast letterpress serif typography, hero gradients, and site footer.
+### 2. Midnight & Deep Luxury Dark Theme
+* **Canvas Background** (`#1D1516`): Deep plum base background.
+* **Card Surface** (`#322526`): Deep contrasting cards and interactive module surfaces.
+* **Main Accent** (`#C08A8F`): Regal highlights, primary buttons, active navigation indicator line.
+* **Soft Secondary** (`#DDCFD1`): Secondary text and delicate borders.
+* **Primary Text** (`#F6F4F4`): Soft warm primary text with WCAG readability.
 
 ---
 
