@@ -274,7 +274,7 @@ async function generate() {
       
       <div class="divider-line"></div>
       
-      <p class="scripture">“Therefore what God has joined together, let no one separate.” — Matthew 19:6</p>
+      <p class="scripture">“Therefore what God has joined together, let no one separate.” — Mark 10:9</p>
       
       <div class="details-box">
         <div class="event-date">Wednesday, 3 February 2027 · 9:00 AM</div>

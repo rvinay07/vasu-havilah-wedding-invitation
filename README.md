@@ -11,7 +11,7 @@ A digital Christian wedding invitation celebrating the Holy Matrimony of **Vasu 
 | :--- | :--- |
 | **Groom** | **VASU** (Son of Mr. **N. Jephaniah** & Mrs. **N. Uma Devi**) |
 | **Bride** | **MERCY HAVILAH** (Daughter of Mr. **S. Deena Shekhar** & Mrs. **S. Esther**) |
-| **Core Scripture** | *“Therefore what God has joined together, let no one separate.”* — **Matthew 19:6** |
+| **Core Scripture** | *“Therefore what God has joined together, let no one separate.”* — **Mark 10:9** |
 | **Engagement Ceremony** | **4 February 2026** *(Celebrated Milestone)* |
 | **Holy Matrimony Service** | **Wednesday, 3 February 2027 at 9:00 AM**<br>📍 **AB Function Hall (AC)**, Behind SSGS Degree College, SN Pet, Guntakal ([Google Maps](https://maps.app.goo.gl/V26a9HupTv4vn8A28)) |
 | **Family Contacts** | • **General Information:** `+91 8978148996`<br>• **Vasu (Groom):** `+91 9652296062`<br>• **Hoshi (Family):** `+91 6281047922` |
@@ -75,7 +75,7 @@ The application features a toggleable dual-palette system with cool undertones (
 
 1. **Custom 16:9 WhatsApp Preview Card (`og-preview.jpg`):**
    * Generated from `gallery-1.jpg` via Chrome CDP (`1280 × 720`, under 100 KB).
-   * Features an arched couple portrait, gold cross `✝`, Cormorant Garamond typography (`VASU & MERCY HAVILAH`), Matthew 19:6, ceremony date, and venue (`AB Function Hall (AC)`).
+   * Features an arched couple portrait, gold cross `✝`, Cormorant Garamond typography (`VASU & MERCY HAVILAH`), Mark 10:9, ceremony date, and venue (`AB Function Hall (AC)`).
    * Backed by fully qualified absolute Open Graph HTTPS metadata for instant WhatsApp crawler rich preview.
 2. **Link Priority in Share Message:**
    * The Vercel invitation URL (`https://vasuwedshavilah.vercel.app/`) is placed at the very top of the share text as the first link so WhatsApp always generates the wedding card preview snippet.

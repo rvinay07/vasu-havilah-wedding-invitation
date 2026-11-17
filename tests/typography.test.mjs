@@ -57,4 +57,27 @@ describe('Typography & Layout Consistency', () => {
     assert.match(preloaderContent, /<span className="block whitespace-nowrap">Vasu<\/span>/);
     assert.match(preloaderContent, /<span className="block whitespace-nowrap">Mercy Havilah<\/span>/);
   });
+
+  it('Top Hero section on HomePage displays Mark 10:9 in elegant italics beneath couple names', () => {
+    const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf-8');
+    assert.match(homeContent, /“\{weddingConfig\.coreVerse\.quote\}”[\s\S]*?—\s*\{weddingConfig\.coreVerse\.reference\}\s*—/);
+  });
+
+  it('A Joyful Invitation section on HomePage displays Mark 10:9 in rounded pill-shaped badge', () => {
+    const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf-8');
+    assert.match(homeContent, /rounded-full[^"]*bg-cream-soft[^"]*border[^"]*shadow-sm[\s\S]*?“\{weddingConfig\.coreVerse\.quote\}”/);
+    assert.match(homeContent, /—\s*\{weddingConfig\.coreVerse\.reference\}/);
+  });
+
+  it('Holy Matrimony milestone on OurStoryPage features lead scripture Mark 10:9', () => {
+    const ourStoryContent = fs.readFileSync(path.join(ROOT, 'src/pages/OurStoryPage.tsx'), 'utf-8');
+    assert.match(ourStoryContent, /\{milestone\.scripture && \([\s\S]*?\{milestone\.scripture\}[\s\S]*?\)\}/);
+    const configContent = fs.readFileSync(path.join(ROOT, 'src/config/weddingConfig.ts'), 'utf-8');
+    assert.match(configContent, /id:\s*["']matrimony["'][\s\S]*?scripture:\s*["']“Therefore what God has joined together, let no one separate\.” — Mark 10:9["']/);
+  });
+
+  it('WhatsApp share invitation places Mark 10:9 near top of message', () => {
+    const configContent = fs.readFileSync(path.join(ROOT, 'src/config/weddingConfig.ts'), 'utf-8');
+    assert.match(configContent, /`"Therefore what God has joined together, let no one separate\." — Mark 10:9`/);
+  });
 });

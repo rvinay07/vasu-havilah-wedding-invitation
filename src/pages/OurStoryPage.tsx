@@ -228,6 +228,12 @@ export const OurStoryPage: React.FC = () => {
                     {milestone.title}
                   </h3>
 
+                  {milestone.scripture && (
+                    <p className="font-serif italic text-xs sm:text-sm text-rose dark:text-champagne mb-3">
+                      {milestone.scripture}
+                    </p>
+                  )}
+
                   <p className="font-sans text-sm text-plum-muted dark:text-darktext-secondary leading-relaxed">
                     {milestone.description}
                   </p>

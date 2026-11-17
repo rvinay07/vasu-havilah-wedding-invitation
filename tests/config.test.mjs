@@ -25,9 +25,9 @@ test('Centralized Wedding Configuration Integrity', async (t) => {
     assert.match(content, /brideMother:\s*["']S\.ESTHER["']/, 'Bride mother must be S.ESTHER');
   });
 
-  await t.test('Scripture and reference are Matthew 19:6', () => {
-    assert.match(content, /Therefore what God has joined together, let no one separate\./, 'Must contain Matthew 19:6 verse');
-    assert.match(content, /Matthew 19:6/, 'Must reference Matthew 19:6');
+  await t.test('Scripture and reference are Mark 10:9', () => {
+    assert.match(content, /Therefore what God has joined together, let no one separate\./, 'Must contain Mark 10:9 verse');
+    assert.match(content, /Mark 10:9/, 'Must reference Mark 10:9');
   });
 
   await t.test('Upcoming events are strictly Ceremony (No Reception, No Thanksgiving)', () => {

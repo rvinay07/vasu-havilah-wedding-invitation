@@ -111,6 +111,15 @@ export const HomePage: React.FC = () => {
                 <span className="block whitespace-nowrap">Mercy Havilah</span>
               </h1>
 
+              <div className="my-3 max-w-lg mx-auto px-2 gsap-hero-sub">
+                <p className="font-serif italic text-base sm:text-lg text-cream/90 dark:text-darktext-secondary leading-relaxed">
+                  “{weddingConfig.coreVerse.quote}”
+                </p>
+                <span className="block font-sans text-xs tracking-widest uppercase font-semibold text-rose dark:text-champagne mt-1">
+                  — {weddingConfig.coreVerse.reference} —
+                </span>
+              </div>
+
               <div className="w-24 h-[1.5px] bg-rose dark:bg-champagne mx-auto my-4 gsap-hero-sub" />
 
               <p className="font-sans text-sm sm:text-base tracking-widest text-cream dark:text-darktext-primary uppercase font-semibold mb-8 gsap-hero-sub">
@@ -153,9 +162,19 @@ export const HomePage: React.FC = () => {
               <p className="text-[0.7rem] uppercase tracking-[0.25em] text-olive dark:text-darksage font-bold mb-2">
                 By the Grace of God
               </p>
-              <h2 className="font-serif text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-medium mb-5">
+              <h2 className="font-serif text-3xl sm:text-4xl text-plum dark:text-darktext-primary font-medium mb-4">
                 A Joyful Invitation
               </h2>
+
+              {/* Centered Rounded Pill Badge with Scripture */}
+              <div className="inline-flex items-center justify-center max-w-xl mx-auto px-5 sm:px-7 py-2 sm:py-2.5 rounded-full bg-cream-soft dark:bg-midnight-elevated border border-rose/30 dark:border-midnight-border text-plum-soft dark:text-darktext-secondary font-serif italic text-sm sm:text-base mb-6 shadow-sm">
+                <span>
+                  “{weddingConfig.coreVerse.quote}”{' '}
+                  <strong className="font-sans not-italic font-bold text-rose dark:text-champagne text-xs uppercase tracking-wider ml-1">
+                    — {weddingConfig.coreVerse.reference}
+                  </strong>
+                </span>
+              </div>
 
               <div className="w-16 h-[1.5px] bg-rose/40 dark:bg-champagne/40 mx-auto mb-6" />
 

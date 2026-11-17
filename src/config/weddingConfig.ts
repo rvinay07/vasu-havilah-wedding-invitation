@@ -26,7 +26,7 @@ export const weddingConfig = {
   
   coreVerse: {
     quote: "Therefore what God has joined together, let no one separate.",
-    reference: "Matthew 19:6"
+    reference: "Mark 10:9"
   },
 
   media: {
@@ -113,7 +113,7 @@ export const weddingConfig = {
       status: "upcoming",
       badge: "Upcoming · 3 Feb 2027",
       title: "The Holy Matrimony",
-      scripture: "“What God has joined together, let no one separate.” — Matthew 19:6",
+      scripture: "“Therefore what God has joined together, let no one separate.” — Mark 10:9",
       description: "We will exchange our sacred wedding vows before God and family at AB Function Hall (AC), Behind SSGS Degree College, SN Pet, Guntakal at 9:00 AM."
     }
   ] as StoryMilestone[],
@@ -163,7 +163,7 @@ export function getWeddingShareMessage(): string {
     `🌐 Digital Invitation & Preview:`,
     weddingConfig.hostingUrl,
     ``,
-    `"Therefore what God has joined together, let no one separate." — Matthew 19:6`,
+    `"Therefore what God has joined together, let no one separate." — Mark 10:9`,
     ``,
     `With praise and gratitude to God, we joyfully invite you and your family to celebrate our Holy Matrimony:`,
     ``,
