@@ -12,10 +12,10 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Names */}
-        <h2 className="font-champagne text-4xl sm:text-5xl md:text-6xl font-normal text-white dark:text-darktext-primary mb-4 leading-none">
-          <span className="block whitespace-nowrap">Vasu</span>
-          <span className="block font-serif italic text-rose dark:text-champagne text-2xl sm:text-3xl md:text-4xl my-1 sm:my-1.5 font-normal leading-none" aria-hidden="true">&amp;</span>
-          <span className="block whitespace-nowrap">Mercy Havilah</span>
+        <h2 className="font-champagne text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-normal text-white dark:text-darktext-primary mb-4 leading-tight flex flex-col md:flex-row items-center justify-center md:gap-3">
+          <span className="whitespace-nowrap">Vasu</span>
+          <span className="font-serif italic text-rose dark:text-champagne text-2xl sm:text-3xl md:text-3xl lg:text-4xl my-0.5 sm:my-1 md:my-0 font-normal leading-none" aria-hidden="true">&amp;</span>
+          <span className="whitespace-nowrap">Mercy Havilah</span>
         </h2>
 
         {/* Faith Note */}
