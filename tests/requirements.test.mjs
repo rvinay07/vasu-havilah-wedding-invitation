@@ -152,6 +152,15 @@ test('Strict Business Rules & Prohibitions Verification', async (t) => {
     }
   });
 
+  await t.test('Standalone minister of ceremony card above wedding ceremony is removed', () => {
+    const homeContent = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf8');
+    const detailsContent = fs.readFileSync(path.join(ROOT, 'src/pages/WeddingDetailsPage.tsx'), 'utf8');
+
+    for (const [name, content] of [['HomePage', homeContent], ['WeddingDetailsPage', detailsContent]]) {
+      assert.doesNotMatch(content, /weddingConfig\.minister\.heading/, `${name} must not render standalone minister heading above ceremony`);
+    }
+  });
+
   await t.test('3D wax seal and physical book invitations are completely removed', () => {
     const appPath = path.join(ROOT, 'src/App.tsx');
     const appContent = fs.readFileSync(appPath, 'utf8');

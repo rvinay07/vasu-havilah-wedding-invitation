@@ -20,29 +20,6 @@ export const WeddingDetailsPage: React.FC = () => {
 
       {/* ================= UPCOMING EVENTS STACK ================= */}
       <section className="py-16 sm:py-20 px-4 max-w-5xl mx-auto space-y-12">
-        {/* MINISTER OF THE CEREMONY */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="p-7 sm:p-9 rounded-3xl bg-cream-soft/60 dark:bg-midnight-card border border-rose/30 dark:border-midnight-border shadow-wedding text-center max-w-2xl mx-auto transition-colors"
-        >
-          <div className="text-rose dark:text-champagne text-2xl font-serif mb-2" aria-hidden="true">
-            ✝
-          </div>
-          <p className="text-[0.7rem] uppercase tracking-[0.25em] text-olive dark:text-darksage font-bold mb-2">
-            {weddingConfig.minister.heading}
-          </p>
-          <h4 className="font-serif text-2xl sm:text-3xl font-medium text-plum dark:text-darktext-primary mb-2">
-            {weddingConfig.minister.name}
-          </h4>
-          <div className="w-12 h-[1px] bg-rose/40 dark:bg-champagne/40 mx-auto my-3" />
-          <p className="font-serif italic text-sm sm:text-base text-plum-muted dark:text-darktext-secondary">
-            {weddingConfig.minister.role}
-          </p>
-        </motion.div>
-
         {/* EVENT 1: WEDDING CEREMONY */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
